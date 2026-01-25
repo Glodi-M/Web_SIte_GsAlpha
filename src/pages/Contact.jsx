@@ -1,10 +1,12 @@
 import React from 'react';
 import './Contact.css';
 
+import banner from '../assets/images/background/banner-contact.jpg';
+
 const Contact = () => {
     return (
         <main>
-            <section className="contact-hero">
+            <section className="contact-hero" style={{ backgroundImage: `url(${banner})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
                 <h1>Contactez nous</h1>
             </section>
 

@@ -1,12 +1,12 @@
 /* Contact Page Styles */
 .contact-hero {
     height: 300px;
-    background: url('https://placehold.co/1440x300/003366/FFFFFF?text=Contactez+nous') no-repeat center center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     margin-bottom: 60px;
+    padding: 80px;
 }
 
 .contact-hero::before {
