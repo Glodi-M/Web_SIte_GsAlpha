@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import logo from "../assets/logo/logo-gsa.jpg";
 
 const Header = () => {
     return (
         <header>
             <div className="logo-container">
                 <Link to="/">
-                    <img src="https://placehold.co/50x50/FFCC00/003366?text=GSA" alt="Logo Groupe Scout Alpha" className="logo" />
+                    <img src={logo} alt="Logo Groupe Scout Alpha" className="logo" />
                 </Link>
                 <Link to="/">
                     <span className="logo-text">Groupe Scout Alpha</span>
