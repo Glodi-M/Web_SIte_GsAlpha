@@ -59,19 +59,20 @@ header {
 
 .logo-container {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
   margin-bottom: 10px;
+  margin-top: 10px;
+  gap: 5px;
 }
 
 .logo {
-  width: 60px;
+  width: 85px;
   height: auto;
-  margin-bottom: 5px;
 }
 
 .logo-text {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: var(--primary-blue);
 }
 
@@ -82,11 +83,10 @@ nav ul {
 }
 
 nav a {
-  font-size: 0.9rem;
-  font-weight: 600;
+  font-size: 18px;
   color: var(--primary-blue);
-  text-transform: uppercase;
   padding: 5px 10px;
+  font-family: 'Poppins', sans-serif;
 }
 
 nav a.active {
@@ -97,7 +97,6 @@ nav a.active {
 .hero {
   position: relative;
   height: 500px;
-  background: url('https://placehold.co/1440x500/003366/FFFFFF?text=Background+Scout') no-repeat center center/cover;
   text-align: center;
   color: #fff;
   display: flex;

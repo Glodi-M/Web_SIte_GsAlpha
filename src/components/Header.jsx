@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import logo from "../assets/logo/logo-gsa.jpg";
+import logo from "../assets/images/logo/logo-gsa.jpg";
 
 const Header = () => {
     return (
@@ -15,11 +15,11 @@ const Header = () => {
             </div>
             <nav>
                 <ul>
-                    <li><NavLink to="/" className={({ isActive }) => isActive ? "active" : ""}>accueil</NavLink></li>
-                    <li><NavLink to="/about">à propos</NavLink></li>
-                    <li><NavLink to="/activities">nos activités</NavLink></li>
-                    <li><NavLink to="/gallery">galerie</NavLink></li>
-                    <li><NavLink to="/contact" className={({ isActive }) => isActive ? "active" : ""}>contact</NavLink></li>
+                    <li><NavLink to="/" className={({ isActive }) => isActive ? "active" : ""}>Accueil</NavLink></li>
+                    <li><NavLink to="/about">À propos</NavLink></li>
+                    <li><NavLink to="/activities">Nos activités</NavLink></li>
+                    <li><NavLink to="/gallery">Galerie</NavLink></li>
+                    <li><NavLink to="/contact" className={({ isActive }) => isActive ? "active" : ""}>Contact</NavLink></li>
                 </ul>
             </nav>
         </header>
