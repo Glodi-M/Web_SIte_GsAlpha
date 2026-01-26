@@ -5,8 +5,9 @@ const Hero = () => {
     return (
         <section className="hero" style={{ backgroundImage: `url(${banner})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
             <div className="hero-content">
-                <h1>Découvrez le Groupe <br /> Scout Alpha</h1>
-                <a href="#" className="btn-primary">rejoignez-nous</a>
+                <h1>Travail, Disciplines, pour mieux Servir.</h1>
+                <p>Bienvenue chez les Scouts du Groupe Alpha</p>
+                <a href="#contact" className="btn-primary">Vivre l'aventure avec nous</a>
             </div>
             <div className="hero-curve">
 

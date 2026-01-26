@@ -128,8 +128,13 @@ nav a.active {
 .hero h1 {
   font-size: 2.5rem;
   color: #fff;
-  margin-bottom: 20px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+  font-size: 1.8rem;
+  color: #fff;
+  margin-bottom: 40px;
 }
 
 .btn-primary {
