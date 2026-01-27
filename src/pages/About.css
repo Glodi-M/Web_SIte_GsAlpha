@@ -1,0 +1,318 @@
+/* About Page Styles */
+.about-page {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--text-color);
+}
+
+.about-hero img {
+    width: 100%;
+    height: 400px;
+    /* Adjust as needed */
+    object-fit: cover;
+    display: block;
+}
+
+/* Sections Common */
+.section-title-left {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    color: var(--primary-blue);
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.section-title-center {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    color: var(--primary-blue);
+    font-size: 2rem;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* History & Mission */
+.history-section,
+.mission-section {
+    padding: 60px 20px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.text-content {
+    flex: 1;
+}
+
+.text-content p {
+    text-align: justify;
+    line-height: 1.8;
+}
+
+.image-content {
+    flex: 1;
+}
+
+.image-content img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Values Section */
+.values-section {
+    background-color: var(--accent-yellow);
+    padding: 40px 0;
+    margin: 40px 0;
+}
+
+.values-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.value-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.value-icon {
+    font-size: 2.5rem;
+    color: var(--primary-blue);
+    /* Or darker outline */
+}
+
+.value-item span {
+    font-weight: 600;
+    color: var(--primary-blue);
+    font-size: 1.1rem;
+}
+
+/* Colors Section */
+.colors-section {
+    padding: 60px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+.colors-image img {
+    max-width: 300px;
+}
+
+.colors-content {
+    text-align: center;
+}
+
+.color-circles {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px 0;
+}
+
+.color-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.circle.blue {
+    background-color: #007bff;
+}
+
+/* Bright blue */
+.circle.white {
+    background-color: #fff;
+}
+
+.circle.yellow {
+    background-color: var(--accent-yellow);
+}
+
+.colors-text {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--primary-blue);
+    font-size: 1.2rem;
+}
+
+/* Devise Section */
+.devise-section {
+    padding: 60px 20px;
+}
+
+.devise-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.devise-card {
+    background-color: var(--primary-blue);
+    color: #fff;
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.devise-card i {
+    font-size: 2.5rem;
+    color: var(--accent-yellow);
+}
+
+.devise-card h3 {
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    margin: 0;
+}
+
+/* Units Section */
+.units-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.units-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.unit-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 180px;
+}
+
+.unit-logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: contain;
+    /* or cover depending on image */
+    margin-bottom: 10px;
+}
+
+.unit-item span {
+    background-color: var(--primary-blue);
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    width: 100%;
+}
+
+.clan-image {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.clan-image img {
+    border-radius: 10px;
+    margin-bottom: -15px;
+    /* Overlap effect if needed */
+    z-index: 1;
+}
+
+.clan-image span {
+    background-color: var(--primary-blue);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 2;
+    position: relative;
+    top: -10px;
+}
+
+/* Family Section */
+.family-section {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    margin-top: 40px;
+}
+
+.family-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+}
+
+.family-title h2 {
+    font-size: 2.5rem;
+    color: var(--primary-blue);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.family-title h3 {
+    font-size: 2rem;
+    color: #555;
+    font-weight: 400;
+}
+
+.family-images {
+    display: flex;
+    gap: 20px;
+}
+
+.family-images img {
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+    .history-section,
+    .mission-section,
+    .colors-section,
+    .family-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .colors-section {
+        gap: 40px;
+    }
+
+    .family-images {
+        flex-direction: column;
+    }
+
+    .family-images img {
+        width: 100%;
+    }
+}
