@@ -39,23 +39,43 @@ export const Activities = () => {
             <h2 class="section-title">Nos dernières activités</h2>
             <p class="subtitle">Les activités du groupe scouts alpha</p>
 
-            <div class="activity-card">
-                <div class="activity-image"></div>
-                <div class="activity-info">
-                    <h3>Lorem ipsum dolor sit amet consectetur</h3>
-                    <p>text...</p>
-                    <a href="#" class="read-more">lire la suite</a>
+            <div class="activities-list">
+                <div class="activity-card">
+                    <div class="activity-image"></div>
+                    <div class="activity-info">
+                        <h3>Lorem ipsum dolor sit amet consectetur</h3>
+                        <p>text...</p>
+                        <a href="#" class="read-more">lire la suite</a>
+                    </div>
+                </div>
+
+                <div class="activity-card">
+                    <div class="activity-image"></div>
+                    <div class="activity-info">
+                        <h3>Lorem ipsum dolor sit amet consectetur</h3>
+                        <p>text...</p>
+                        <a href="#" class="read-more">lire la suite</a>
+                    </div>
+
+                </div>
+                <div class="activity-card">
+                    <div class="activity-image"></div>
+                    <div class="activity-info">
+                        <h3>Lorem ipsum dolor sit amet consectetur</h3>
+                        <p>text...</p>
+                        <a href="#" class="read-more">lire la suite</a>
+                    </div>
+                </div>
+                <div class="activity-card">
+                    <div class="activity-image"></div>
+                    <div class="activity-info">
+                        <h3>Lorem ipsum dolor sit amet consectetur</h3>
+                        <p>text...</p>
+                        <a href="#" class="read-more">lire la suite</a>
+                    </div>
                 </div>
             </div>
 
-            <div class="activity-card">
-                <div class="activity-image"></div>
-                <div class="activity-info">
-                    <h3>Lorem ipsum dolor sit amet consectetur</h3>
-                    <p>text...</p>
-                    <a href="#" class="read-more">lire la suite</a>
-                </div>
-            </div>
         </section>
     );
 };
