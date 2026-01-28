@@ -1,4 +1,5 @@
 import React from 'react';
+import { listeActivites } from '../data/activites';
 
 export const ProjectEducatif = () => {
     return (
@@ -36,20 +37,20 @@ export const News = () => {
             </div>
 
             <div class="news-grid">
-                {[1, 2, 3, 4].map((item) => (
+                {listeActivites.map((item) => (
                     <div class="news-card" key={item}>
                         <div class="news-card-image">
-                            <img src="https://placehold.co/400x250/e0e0e0/333333?text=Thinking+Day" alt="Activity" />
+                            <img src={item.image} alt="Activity" />
                             <div class="date-badge">
-                                <span class="month">FÉVR.</span>
-                                <span class="day">20</span>
+                                <span class="month">{item.month}</span>
+                                <span class="day">{item.day}</span>
                             </div>
                         </div>
                         <div class="news-card-content">
-                            <div class="news-time">10:00 (Africa/Kinshasa)</div>
-                            <h3 class="news-card-title">Thinking Day 22 février 2026</h3>
-                            <p class="news-card-desc">100e CÉLÉBRATION – UN HÉRITAGE VIVANT</p>
-                            <div class="news-location">Kinshasa, Congo (DRC)</div>
+                            <div class="news-time">{item.time} (Africa/Kinshasa)</div>
+                            <h3 class="news-card-title">{item.title}</h3>
+                            <p class="news-card-desc">{item.description}</p>
+                            <div class="news-location">{item.location}</div>
                         </div>
                     </div>
                 ))}
