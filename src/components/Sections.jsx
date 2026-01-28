@@ -27,8 +27,33 @@ export const ProjectEducatif = () => {
 export const News = () => {
     return (
         <section class="news container">
-            <h2 class="section-title">Les actualités</h2>
-            <div class="news-placeholder"></div>
+            <div class="news-header">
+                <div>
+                    <h2 class="section-title" style={{ marginBottom: '10px', textAlign: 'left', marginTop: 0 }}>Nos prochaines activités</h2>
+                    <p class="news-subtitle">Découvrez les nouveautés dans notre entreprise !</p>
+                </div>
+                <a href="#" class="view-all-link">Voir tout →</a>
+            </div>
+
+            <div class="news-grid">
+                {[1, 2, 3, 4].map((item) => (
+                    <div class="news-card" key={item}>
+                        <div class="news-card-image">
+                            <img src="https://placehold.co/400x250/e0e0e0/333333?text=Thinking+Day" alt="Activity" />
+                            <div class="date-badge">
+                                <span class="month">FÉVR.</span>
+                                <span class="day">20</span>
+                            </div>
+                        </div>
+                        <div class="news-card-content">
+                            <div class="news-time">10:00 (Africa/Kinshasa)</div>
+                            <h3 class="news-card-title">Thinking Day 22 février 2026</h3>
+                            <p class="news-card-desc">100e CÉLÉBRATION – UN HÉRITAGE VIVANT</p>
+                            <div class="news-location">Kinshasa, Congo (DRC)</div>
+                        </div>
+                    </div>
+                ))}
+            </div>
         </section>
     );
 };
