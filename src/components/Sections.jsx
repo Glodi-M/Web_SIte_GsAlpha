@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { listeActivites } from '../data/activites';
 
 export const ProjectEducatif = () => {
@@ -33,12 +34,12 @@ export const News = () => {
                     <h2 class="section-title" style={{ marginBottom: '10px', textAlign: 'left', marginTop: 0 }}>Nos prochaines activités</h2>
                     <p class="news-subtitle">Découvrez les nouveautés dans notre entreprise !</p>
                 </div>
-                <a href="#" class="view-all-link">Voir tout →</a>
+                <Link to="/activities" class="view-all-link">Voir tout →</Link>
             </div>
 
             <div class="news-grid">
                 {listeActivites.map((item) => (
-                    <div class="news-card" key={item}>
+                    <Link to={`/activity/${item.id}`} class="news-card" key={item.id} style={{ textDecoration: 'none', color: 'inherit' }}>
                         <div class="news-card-image">
                             <img src={item.image} alt="Activity" />
                             <div class="date-badge">
@@ -52,7 +53,7 @@ export const News = () => {
                             <p class="news-card-desc">{item.description}</p>
                             <div class="news-location">{item.location}</div>
                         </div>
-                    </div>
+                    </Link>
                 ))}
             </div>
         </section>
