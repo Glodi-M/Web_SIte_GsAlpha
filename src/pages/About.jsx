@@ -12,7 +12,7 @@ const About = () => {
             {/* Notre Histoire */}
             <section className="container history-section">
                 <div className="text-content">
-                    <h2 className="section-title-left">Notre histoire</h2>
+                    <h2 className="section-title-left">Qui sommes-nous ?</h2>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus suscipit est, ac eleifend ex.
                         Sed malesuada elementum pretium. Nulla id diam ac arcu finibus rhoncus ut ut libero.
@@ -131,10 +131,10 @@ const About = () => {
                         <img src="https://placehold.co/150x150/002b5b/ffffff?text=Ouragan" alt="Compagnie ouragan" className="unit-logo" />
                         <span>Compagnie ouragan</span>
                     </div>
-                </div>
-                <div className="clan-image">
-                    <img src="https://placehold.co/300x200/002b5b/ffffff?text=Clan" alt="Clan" />
-                    <span>Clan lumière ardente</span>
+                    <div className="unit-item">
+                        <img src="https://placehold.co/150x150/002b5b/ffffff?text=Clan" alt="Clan" className="unit-logo" />
+                        <span>Clan lumière ardente</span>
+                    </div>
                 </div>
             </section>
 
