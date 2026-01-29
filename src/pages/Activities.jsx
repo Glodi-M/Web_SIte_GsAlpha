@@ -1,8 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { activityTypes } from '../data/activityTypes';
+
 import './Activities.css';
 import robert from '../assets/images/logo/baden-powell.jpg';
+
 
 const Activities = () => {
     return (
@@ -13,6 +15,8 @@ const Activities = () => {
             </div>
 
             <div className="container">
+
+
                 <div className="activities-grid">
                     {activityTypes.map((activity) => (
                         <Link to={`/activity-type/${activity.id}`} key={activity.id} className="activity-card-link">
