@@ -33,9 +33,8 @@ export const News = () => {
             <div class="news-header">
                 <div>
                     <h2 class="section-title" style={{ marginBottom: '10px', textAlign: 'left', marginTop: 0 }}>Nos prochaines activités</h2>
-                    <p class="news-subtitle">Découvrez les nouveautés dans notre entreprise !</p>
+                    <p class="news-subtitle">Découvrez les nouvelles activités du groupe scouts alpha!</p>
                 </div>
-                <Link to="/activities" class="view-all-link">Voir tout →</Link>
             </div>
 
             <div class="news-grid">
@@ -80,6 +79,7 @@ export const Activities = () => {
                         ></div>
                         <div className="activity-info">
                             <h3>{activity.title}</h3>
+                            <p>{activity.month} {activity.day}</p>
                             <p>{activity.description}</p>
                             <Link to={`/activity/${activity.id}`} className="read-more">
                                 lire la suite
@@ -99,7 +99,7 @@ export const Founder = () => {
             <div class="container founder-content">
                 <div class="founder-text">
                     <h2>Monsieur BAYONZIMINA</h2>
-                    <p>Fondateur du Groupe Scout Alpha</p>
+                    <p>Initiateur du Groupe Scout Alpha</p>
                 </div>
                 <div class="founder-image">
                     <img src="https://placehold.co/300x300/e0e0e0/333333?text=Fondateur" alt="Monsieur BAYONZIMINA" />

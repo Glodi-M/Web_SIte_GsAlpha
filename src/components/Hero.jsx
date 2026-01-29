@@ -7,7 +7,7 @@ const Hero = () => {
             <div className="hero-content">
                 <h1>Travail, Disciplines, pour mieux Servir.</h1>
                 <p>Bienvenue chez les Scouts du Groupe Alpha</p>
-                <a href="#contact" className="btn-primary">Vivre l'aventure avec nous</a>
+                <a href="/Contact" className="btn-primary">Vivre l'aventure avec nous</a>
             </div>
             <div className="hero-curve">
 

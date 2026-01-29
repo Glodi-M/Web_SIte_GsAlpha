@@ -307,6 +307,11 @@ nav a.active {
   color: #000;
 }
 
+.container {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
 @media (max-width: 1024px) {
   .news-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -507,5 +512,91 @@ footer {
 
   .activity-card {
     width: 100%;
+  }
+}
+
+/* Mobile Burger Menu Styles */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 25px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1001;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: var(--primary-blue);
+  border-radius: 10px;
+  transition: all 0.3s linear;
+  position: relative;
+  transform-origin: 1px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Animations for Hamburger to X */
+.bar.open:nth-child(1) {
+  transform: rotate(45deg);
+}
+
+.bar.open:nth-child(2) {
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+.bar.open:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .logo-container {
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: right 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  nav.nav-open {
+    right: 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+  }
+
+  nav a {
+    font-size: 1.2rem;
   }
 }
