@@ -1,5 +1,15 @@
 import React from 'react';
 import './About.css';
+import Foulard from '../assets/images/logo/imagefoulard.jpg';
+import district from '../assets/images/logo/dske.jpg';
+import ask from '../assets/images/logo/ask.jpg';
+import fesco from '../assets/images/logo/fesco.jpg';
+import minigsa from '../assets/images/logo/minigsa.png';
+
+import meute from '../assets/images/logo-unites/meute.jpg';
+import lion from '../assets/images/logo-unites/lion.jpg';
+import panthere from '../assets/images/logo-unites/panthere.jpg';
+import ouragan from '../assets/images/logo-unites/ouragan.jpg';
 
 const About = () => {
     return (
@@ -68,7 +78,7 @@ const About = () => {
             {/* Nos Couleurs */}
             <section className="container colors-section">
                 <div className="colors-image">
-                    <img src="https://placehold.co/400x400/002b5b/F7EB0E?text=Foulard" alt="Foulard Scout" />
+                    <img src={Foulard} alt="Foulard Scout" />
                 </div>
                 <div className="colors-content">
                     <h2 className="section-title-left">Nos couleurs</h2>
@@ -116,19 +126,19 @@ const About = () => {
                 <h2 className="section-title-left">Nos unités</h2>
                 <div className="units-grid">
                     <div className="unit-item">
-                        <img src="https://placehold.co/150x150/F7EB0E/002b5b?text=Meute" alt="Meute Espoir" className="unit-logo" />
+                        <img src={meute} alt="Meute Espoir" className="unit-logo" />
                         <span>Meute - Espoir</span>
                     </div>
                     <div className="unit-item">
-                        <img src="https://placehold.co/150x150/28a745/ffffff?text=Lions" alt="Troupe des lions" className="unit-logo" />
+                        <img src={lion} alt="Troupe des lions" className="unit-logo" />
                         <span>Troupe des lions</span>
                     </div>
                     <div className="unit-item">
-                        <img src="https://placehold.co/150x150/28a745/ffffff?text=Pantheres" alt="Troupe des panthères" className="unit-logo" />
+                        <img src={panthere} alt="Troupe des panthères" className="unit-logo" />
                         <span>Troupe des panthères</span>
                     </div>
                     <div className="unit-item">
-                        <img src="https://placehold.co/150x150/002b5b/ffffff?text=Ouragan" alt="Compagnie ouragan" className="unit-logo" />
+                        <img src={ouragan} alt="Compagnie ouragan" className="unit-logo" />
                         <span>Compagnie ouragan</span>
                     </div>
                     <div className="unit-item">
@@ -174,21 +184,21 @@ const About = () => {
                     <div className="affiliation-grid">
                         <div className="affiliation-card">
                             <div className="affiliation-icon">
-                                <img src="https://placehold.co/100x100?text=District" alt="Logo District Scout Kin-Est" />
+                                <img src={district} alt="Logo District Scout Kin-Est" />
                             </div>
                             <h3>District Scout Kin-Est</h3>
                             <p>Membre actif du district, participant au développement du scoutisme local.</p>
                         </div>
                         <div className="affiliation-card">
                             <div className="affiliation-icon">
-                                <img src="https://placehold.co/100x100?text=ASK" alt="Logo Association des Scouts de Kinshasa" />
+                                <img src={ask} alt="Logo Association des Scouts de Kinshasa" />
                             </div>
                             <h3>Association des Scouts de Kinshasa</h3>
                             <p>Affilié à l'ASK, contribuant à l'éducation des jeunes dans la capitale.</p>
                         </div>
                         <div className="affiliation-card">
                             <div className="affiliation-icon">
-                                <img src="https://placehold.co/100x100?text=FESCO" alt="Logo FESCO" />
+                                <img src={fesco} alt="Logo FESCO" />
                             </div>
                             <h3>Fédération des Scouts de la RDC</h3>
                             <p>Fier membre de la FESCO, portant haut les valeurs du scoutisme congolais.</p>
@@ -201,7 +211,7 @@ const About = () => {
             <section className="family-section">
                 <div className="container family-container">
                     <div className="family-title">
-                        <h2>Alpha <i className="fas fa-fleur-de-lis"></i></h2>
+                        <h2>Alpha <img src={minigsa} alt="Logo GSA" /></h2>
                         <h3>Une grande famille</h3>
                     </div>
                     <div className="family-images">
