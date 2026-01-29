@@ -1,11 +1,13 @@
 import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { listeActivites } from '../data/activites';
+import { activitesAvenir } from '../data/activitesAvenir';
+import { activitesPasse } from '../data/activitesPasse';
 import './ActivityDetail.css';
 
 const ActivityDetail = () => {
     const { id } = useParams();
-    const activity = listeActivites.find(a => a.id === parseInt(id));
+    const allActivities = [...activitesAvenir, ...activitesPasse];
+    const activity = allActivities.find(a => a.id === parseInt(id));
 
     // Scroll to top when component mounts
     useEffect(() => {

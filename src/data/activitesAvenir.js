@@ -1,4 +1,4 @@
-export const listeActivites = [
+export const activitesAvenir = [
     {
         id: 1,
         title: "Thinking Day 22 février 2026",
@@ -13,7 +13,8 @@ export const listeActivites = [
             category: "Célébration",
             participants: "Tous les membres"
         },
-        image: "https://placehold.co/800x400/e0e0e0/333333?text=Thinking+Day+Full"
+        image: "https://placehold.co/800x400/e0e0e0/333333?text=Thinking+Day+Full",
+        isUpcoming: true
     },
     {
         id: 2,
@@ -29,7 +30,8 @@ export const listeActivites = [
             category: "Sortie / Formation",
             participants: "Louveteaux (8-11 ans)"
         },
-        image: "https://placehold.co/800x400/e0e0e0/333333?text=Sortie+Louveaux"
+        image: "https://placehold.co/800x400/e0e0e0/333333?text=Sortie+Louveaux",
+        isUpcoming: true
     },
     {
         id: 3,
@@ -45,7 +47,8 @@ export const listeActivites = [
             category: "Camp",
             participants: "Éclaireurs & Pionniers"
         },
-        image: "https://placehold.co/800x400/e0e0e0/333333?text=Camp+de+Paques"
+        image: "https://placehold.co/800x400/e0e0e0/333333?text=Camp+de+Paques",
+        isUpcoming: true
     },
     {
         id: 4,
@@ -61,6 +64,7 @@ export const listeActivites = [
             category: "Formation",
             participants: "Chefs & Assistants"
         },
-        image: "https://placehold.co/800x400/e0e0e0/333333?text=Formation+Chefs"
+        image: "https://placehold.co/800x400/e0e0e0/333333?text=Formation+Chefs",
+        isUpcoming: true
     }
 ];

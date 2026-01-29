@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { listeActivites } from '../data/activites';
+import { activitesAvenir } from '../data/activitesAvenir';
+import { activitesPasse } from '../data/activitesPasse';
 
 export const ProjectEducatif = () => {
     return (
@@ -38,7 +39,7 @@ export const News = () => {
             </div>
 
             <div class="news-grid">
-                {listeActivites.map((item) => (
+                {activitesAvenir.map((item) => (
                     <Link to={`/activity/${item.id}`} class="news-card" key={item.id} style={{ textDecoration: 'none', color: 'inherit' }}>
                         <div class="news-card-image">
                             <img src={item.image} alt="Activity" />
@@ -61,46 +62,31 @@ export const News = () => {
 };
 
 export const Activities = () => {
+    // We can reverse the list to show "latest" if they were chronological, 
+    // or just take the first few. For now, we map the existing list.
+    const displayActivities = activitesPasse.slice(0, 4);
+
     return (
-        <section class="activities container">
-            <h2 class="section-title">Nos dernières activités</h2>
-            <p class="subtitle">Les activités du groupe scouts alpha</p>
+        <section className="activities container">
+            <h2 className="section-title">Nos dernières activités</h2>
+            <p className="subtitle">Les activités du groupe scouts alpha</p>
 
-            <div class="activities-list">
-                <div class="activity-card">
-                    <div class="activity-image"></div>
-                    <div class="activity-info">
-                        <h3>Lorem ipsum dolor sit amet consectetur</h3>
-                        <p>text...</p>
-                        <a href="#" class="read-more">lire la suite</a>
+            <div className="activities-list">
+                {displayActivities.map((activity) => (
+                    <div className="activity-card" key={activity.id}>
+                        <div
+                            className="activity-image"
+                            style={{ backgroundImage: `url(${activity.image})` }}
+                        ></div>
+                        <div className="activity-info">
+                            <h3>{activity.title}</h3>
+                            <p>{activity.description}</p>
+                            <Link to={`/activity/${activity.id}`} className="read-more">
+                                lire la suite
+                            </Link>
+                        </div>
                     </div>
-                </div>
-
-                <div class="activity-card">
-                    <div class="activity-image"></div>
-                    <div class="activity-info">
-                        <h3>Lorem ipsum dolor sit amet consectetur</h3>
-                        <p>text...</p>
-                        <a href="#" class="read-more">lire la suite</a>
-                    </div>
-
-                </div>
-                <div class="activity-card">
-                    <div class="activity-image"></div>
-                    <div class="activity-info">
-                        <h3>Lorem ipsum dolor sit amet consectetur</h3>
-                        <p>text...</p>
-                        <a href="#" class="read-more">lire la suite</a>
-                    </div>
-                </div>
-                <div class="activity-card">
-                    <div class="activity-image"></div>
-                    <div class="activity-info">
-                        <h3>Lorem ipsum dolor sit amet consectetur</h3>
-                        <p>text...</p>
-                        <a href="#" class="read-more">lire la suite</a>
-                    </div>
-                </div>
+                ))}
             </div>
 
         </section>
