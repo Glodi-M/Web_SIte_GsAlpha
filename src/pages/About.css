@@ -157,7 +157,6 @@
 /* --- Common Section Styles --- */
 section {
     padding: 80px 20px;
-    margin: 80px 0;
 }
 
 .container {
@@ -214,6 +213,7 @@ section {
     display: flex;
     align-items: center;
     gap: 60px;
+    margin-top: 80px;
 }
 
 .text-content {
