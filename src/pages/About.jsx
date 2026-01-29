@@ -167,6 +167,36 @@ const About = () => {
                 </div>
             </section>
 
+            {/* Affiliations */}
+            <section className="affiliation-section">
+                <div className="container">
+                    <h2 className="section-title-center">Nos Affiliations</h2>
+                    <div className="affiliation-grid">
+                        <div className="affiliation-card">
+                            <div className="affiliation-icon">
+                                <img src="https://placehold.co/100x100?text=District" alt="Logo District Scout Kin-Est" />
+                            </div>
+                            <h3>District Scout Kin-Est</h3>
+                            <p>Membre actif du district, participant au développement du scoutisme local.</p>
+                        </div>
+                        <div className="affiliation-card">
+                            <div className="affiliation-icon">
+                                <img src="https://placehold.co/100x100?text=ASK" alt="Logo Association des Scouts de Kinshasa" />
+                            </div>
+                            <h3>Association des Scouts de Kinshasa</h3>
+                            <p>Affilié à l'ASK, contribuant à l'éducation des jeunes dans la capitale.</p>
+                        </div>
+                        <div className="affiliation-card">
+                            <div className="affiliation-icon">
+                                <img src="https://placehold.co/100x100?text=FESCO" alt="Logo FESCO" />
+                            </div>
+                            <h3>Fédération des Scouts de la RDC</h3>
+                            <p>Fier membre de la FESCO, portant haut les valeurs du scoutisme congolais.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             {/* Une grande famille */}
             <section className="family-section">
                 <div className="container family-container">
