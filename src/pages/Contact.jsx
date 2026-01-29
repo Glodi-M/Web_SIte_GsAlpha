@@ -5,67 +5,128 @@ import banner from '../assets/images/background/banner-contact.jpg';
 
 const Contact = () => {
     return (
-        <main>
-            <section className="contact-hero" style={{ backgroundImage: `url(${banner})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
-                <h1>Contactez nous</h1>
+        <main className="contact-page">
+            <section className="contact-hero" style={{ backgroundImage: `url(${banner})` }}>
+                <div className="hero-overlay"></div>
+                <div className="hero-content fadeInUp">
+                    <h1>Contactez-nous</h1>
+                    <p className="hero-subtitle">Une question ? Un projet ? Nous sommes là pour vous.</p>
+                </div>
             </section>
 
             <section className="contact-container container">
-                <p className="contact-intro">Nous serons heureux de répondre à vos questions.</p>
+                <div className="contact-header fadeInUp delay-1">
+                    <p className="contact-intro">
+                        Nous serons ravis d'échanger avec vous. Remplissez le formulaire ou utilisez nos coordonnées ci-dessous.
+                    </p>
+                </div>
 
                 <div className="contact-content">
                     {/* Form Section */}
-                    <div className="contact-form-wrapper">
+                    <div className="contact-form-wrapper fadeInLeft delay-2">
+                        <div className="form-header">
+                            <h3>Envoyez-nous un message</h3>
+                        </div>
                         <form className="contact-form">
-                            <label htmlFor="name">Nom</label>
-                            <input type="text" id="name" name="name" />
+                            <div className="form-group">
+                                <label htmlFor="name">Nom complet</label>
+                                <input type="text" id="name" name="name" placeholder="Votre nom" />
+                            </div>
 
-                            <label htmlFor="email">E-mail</label>
-                            <input type="email" id="email" name="email" />
+                            <div className="form-group">
+                                <label htmlFor="email">Adresse E-mail</label>
+                                <input type="email" id="email" name="email" placeholder="votre@email.com" />
+                            </div>
 
-                            <label htmlFor="subject">Sujet</label>
-                            <input type="text" id="subject" name="subject" />
+                            <div className="form-group">
+                                <label htmlFor="subject">Sujet</label>
+                                <input type="text" id="subject" name="subject" placeholder="Sujet de votre message" />
+                            </div>
 
-                            <label htmlFor="message">Message</label>
-                            <textarea id="message" name="message" rows="5"></textarea>
+                            <div className="form-group">
+                                <label htmlFor="message">Message</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Comment pouvons-nous vous aider ?"></textarea>
+                            </div>
 
-                            <button type="submit" className="btn-submit">Envoyer</button>
+                            <button type="submit" className="btn-submit">
+                                <span>Envoyer le message</span>
+                                <i className="fas fa-paper-plane"></i>
+                            </button>
                         </form>
                     </div>
 
                     {/* Info Section */}
-                    <div className="contact-info-wrapper">
-                        <h2>Coordonnées</h2>
-                        <ul className="info-list">
-                            <li>
-                                <i className="fas fa-map-marker-alt"></i>
-                                <span>519, LUKAYA, Quartier 5/ N'djili Kinshasa</span>
-                            </li>
-                            <li>
-                                <i className="fas fa-phone-alt"></i>
-                                <span>+243 82 44 87 690</span>
-                            </li>
-                            <li>
-                                <i className="fas fa-envelope"></i>
-                                <span>gsalpha001@gmail.com</span>
-                            </li>
-                            <li>
-                                <i className="far fa-clock"></i>
-                                <span>Samedi 15h00 à 17h00 - Dimanche 10h à 12h00</span>
-                            </li>
-                        </ul>
+                    <div className="contact-info-wrapper fadeInRight delay-2">
+                        <div className="info-card">
+                            <h2>Nos Coordonnées</h2>
+                            <p className="info-subtitle">Retrouvez-nous facilement</p>
 
-                        <div className="map-placeholder">
-                            {/* Placeholder for map - using an image or iframe */}
-                            <img src="https://placehold.co/400x250/e0e0e0/333333?text=Carte+Kinshasa" alt="Carte" />
+                            <ul className="info-list">
+                                <li className="info-item">
+                                    <div className="icon-box">
+                                        <i className="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div className="info-text">
+                                        <strong>Adresse</strong>
+                                        <span>519, LUKAYA, Quartier 5/ N'djili Kinshasa</span>
+                                    </div>
+                                </li>
+                                <li className="info-item">
+                                    <div className="icon-box">
+                                        <i className="fas fa-phone-alt"></i>
+                                    </div>
+                                    <div className="info-text">
+                                        <strong>Téléphone</strong>
+                                        <span>+243 82 44 87 690</span>
+                                    </div>
+                                </li>
+                                <li className="info-item">
+                                    <div className="icon-box">
+                                        <i className="fas fa-envelope"></i>
+                                    </div>
+                                    <div className="info-text">
+                                        <strong>E-mail</strong>
+                                        <span>gsalpha001@gmail.com</span>
+                                    </div>
+                                </li>
+                                <li className="info-item">
+                                    <div className="icon-box">
+                                        <i className="far fa-clock"></i>
+                                    </div>
+                                    <div className="info-text">
+                                        <strong>Heures d'ouverture</strong>
+                                        <span>Samedi 15h00 - 17h00<br />Dimanche 10h00 - 12h00</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div className="map-container">
+                            <iframe
+                                title="Localisation GSA"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5462.871019201149!2d15.375997501416796!3d-4.415236840590015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a6a390045841ad5%3A0xe4ee4aaa9c912649!2sECC%2F23%C3%A8me%20CEC%20N&#39;DJILI%201!5e0!3m2!1sfr!2scd!4v1769724225713!5m2!1sfr!2scd"
+                                width="100%"
+                                height="250"
+                                style={{ border: 0 }}
+                                allowFullScreen=""
+                                loading="lazy">
+                            </iframe>
                         </div>
                     </div>
                 </div>
 
-                <div className="contact-qr-section">
-                    <p>Rejoignez notre grande famille scoute Alpha</p>
-                    <div className="qr-code">
-                        <img src="https://placehold.co/100x100/000000/FFFFFF?text=QR" alt="QR Code" />
+
+
+
+                <div className="contact-qr-section fadeInUp delay-3">
+                    <div className="qr-card">
+                        <div className="qr-content">
+                            <h3>Rejoignez la famille Alpha</h3>
+                            <p>Scannez pour plus d'informations et nous rejoindre sur WhatsApp</p>
+                        </div>
+                        <div className="qr-code">
+                            <img src="https://placehold.co/150x150/002b5b/FFFFFF?text=QR+Code" alt="QR Code" />
+                        </div>
                     </div>
                 </div>
             </section>
