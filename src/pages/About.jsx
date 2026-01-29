@@ -4,7 +4,7 @@ import Foulard from '../assets/images/logo/imagefoulard.jpg';
 import district from '../assets/images/logo/dske.jpg';
 import ask from '../assets/images/logo/ask.jpg';
 import fesco from '../assets/images/logo/fesco.jpg';
-import minigsa from '../assets/images/logo/minigsa.png';
+import minigsa from '../assets/images/logo/gsa2025.png';
 
 import meute from '../assets/images/logo-unites/meute.jpg';
 import lion from '../assets/images/logo-unites/lion.jpg';
@@ -211,7 +211,7 @@ const About = () => {
             <section className="family-section">
                 <div className="container family-container">
                     <div className="family-title">
-                        <h2>Alpha <img src={minigsa} alt="Logo GSA" /></h2>
+                        <h2>Alpha <img src={minigsa} alt="Logo GSA" className='minilogo' /></h2>
                         <h3>Une grande famille</h3>
                     </div>
                     <div className="family-images">

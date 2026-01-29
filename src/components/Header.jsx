@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import logo from "../assets/images/logo/logo-gsa.jpg";
+import logo from "../assets/images/logo/gsa2025.png";
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);

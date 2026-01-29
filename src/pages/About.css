@@ -496,6 +496,11 @@
     transform: rotate(-3deg) scale(1.05);
 }
 
+.minilogo {
+    width: 80px;
+    height: auto;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
 

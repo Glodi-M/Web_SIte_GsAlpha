@@ -1,5 +1,6 @@
 import React from 'react';
 import './Activities.css';
+import robert from '../assets/images/logo/baden-powell.jpg';
 
 const Activities = () => {
     return (
@@ -88,7 +89,7 @@ const Activities = () => {
             <div className="container">
                 <div className="quote-section">
                     <div className="quote-image">
-                        <img src="https://placehold.co/150x150/28a745/ffffff?text=BP" alt="Robert Baden-Powell" />
+                        <img src={robert} alt="Robert Baden-Powell" />
                     </div>
                     <div className="quote-content">
                         <p className="quote-text">
