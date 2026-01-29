@@ -138,6 +138,35 @@ const About = () => {
                 </div>
             </section>
 
+            {/* Nos Effectifs */}
+            <section className="statistics-section">
+                <div className="container">
+                    <h2 className="section-title-center">Nos effectifs en chiffres</h2>
+                    <div className="stats-grid">
+                        <div className="stat-item">
+                            <span className="stat-number">45</span>
+                            <span className="stat-label">Meute</span>
+                        </div>
+                        <div className="stat-item">
+                            <span className="stat-number">32</span>
+                            <span className="stat-label">Troupe</span>
+                        </div>
+                        <div className="stat-item">
+                            <span className="stat-number">28</span>
+                            <span className="stat-label">Compagnie</span>
+                        </div>
+                        <div className="stat-item">
+                            <span className="stat-number">15</span>
+                            <span className="stat-label">Clan</span>
+                        </div>
+                        <div className="stat-item">
+                            <span className="stat-number">12</span>
+                            <span className="stat-label">Adultes</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             {/* Une grande famille */}
             <section className="family-section">
                 <div className="container family-container">

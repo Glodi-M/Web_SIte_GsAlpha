@@ -40,6 +40,7 @@
 .colors-section,
 .devise-section,
 .units-section,
+.statistics-section,
 .family-section {
     animation: fadeInUp 0.8s ease-out forwards;
     opacity: 0;
@@ -70,6 +71,10 @@
 
 .units-section {
     animation-delay: 0.8s;
+}
+
+.statistics-section {
+    animation-delay: 0.85s;
 }
 
 .family-section {
@@ -520,5 +525,96 @@
 
     .devise-cards {
         gap: 20px;
+    }
+}
+
+/* Statistics Section */
+.statistics-section {
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #002b5b 0%, #004aad 100%);
+    color: #fff;
+    margin-top: 60px;
+    position: relative;
+    overflow: hidden;
+}
+
+.statistics-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://www.transparenttextures.com/patterns/cubes.png');
+    opacity: 0.1;
+}
+
+.statistics-section .section-title-center {
+    color: #fff;
+}
+
+.stats-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    width: 180px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.stat-number {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: var(--accent-yellow);
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 10px;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.stat-label {
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .stats-grid {
+        gap: 20px;
+    }
+
+    .stat-item {
+        width: 140px;
+        padding: 20px;
+    }
+
+    .stat-number {
+        font-size: 2.5rem;
+    }
+
+    .stat-label {
+        font-size: 0.9rem;
     }
 }
