@@ -1,64 +1,33 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { activityTypes } from '../data/activityTypes';
 import './Activities.css';
 import robert from '../assets/images/logo/baden-powell.jpg';
 
 const Activities = () => {
     return (
         <main className="activities-page">
-            <p className="activities-header">
+            <div className="activities-header">
                 <h1 className="activities-title">Découvre nos activités</h1>
                 <p className="activities-subtitle">Apprendre, servir et grandir ensemble dans la nature</p>
-            </p>
+            </div>
 
             <div className="container">
                 <div className="activities-grid">
-                    {/* Card 1 */}
-                    <div className="activity-card-large">
-                        <img src="https://placehold.co/600x400/e0e0e0/ffffff?text=Randonnees" alt="Randonnées" className="activity-card-image" />
-                        <div className="activity-card-content">
-                            <h3 className="activity-card-title">
-                                <i className="fas fa-tree activity-icon"></i>
-                                Randonnées et Campements
-                            </h3>
-                            <p className="activity-card-desc">Exploration de la nature, bivouac</p>
-                        </div>
-                    </div>
-
-                    {/* Card 2 */}
-                    <div className="activity-card-large">
-                        <img src="https://placehold.co/600x400/e0e0e0/ffffff?text=Ateliers" alt="Ateliers" className="activity-card-image" />
-                        <div className="activity-card-content">
-                            <h3 className="activity-card-title">
-                                <i className="fas fa-tools activity-icon"></i>
-                                Ateliers, Réunion Formation
-                            </h3>
-                            <p className="activity-card-desc">Bricolage, orientation, premier secours</p>
-                        </div>
-                    </div>
-
-                    {/* Card 3 */}
-                    <div className="activity-card-large">
-                        <img src="https://placehold.co/600x400/e0e0e0/ffffff?text=Service" alt="Service" className="activity-card-image" />
-                        <div className="activity-card-content">
-                            <h3 className="activity-card-title">
-                                <i className="fas fa-hands-helping activity-icon"></i>
-                                Service à la communauté
-                            </h3>
-                            <p className="activity-card-desc">Exploration de la nature, bivouac</p>
-                        </div>
-                    </div>
-
-                    {/* Card 4 */}
-                    <div className="activity-card-large">
-                        <img src="https://placehold.co/600x400/e0e0e0/ffffff?text=Jeux" alt="Jeux" className="activity-card-image" />
-                        <div className="activity-card-content">
-                            <h3 className="activity-card-title">
-                                <i className="fas fa-gamepad activity-icon"></i>
-                                Jeux, Expressions, Découvertes
-                            </h3>
-                            <p className="activity-card-desc">Activités ludiques, exploration, chants</p>
-                        </div>
-                    </div>
+                    {activityTypes.map((activity) => (
+                        <Link to={`/activity-type/${activity.id}`} key={activity.id} className="activity-card-link">
+                            <div className="activity-card-large">
+                                <img src={activity.image} alt={activity.title} className="activity-card-image" />
+                                <div className="activity-card-content">
+                                    <h3 className="activity-card-title">
+                                        <i className={`${activity.icon} activity-icon`} style={{ color: activity.color }}></i>
+                                        {activity.title}
+                                    </h3>
+                                    <p className="activity-card-desc">{activity.shortDescription}</p>
+                                </div>
+                            </div>
+                        </Link>
+                    ))}
                 </div>
             </div>
 

@@ -7,6 +7,7 @@ import Contact from './pages/Contact';
 import Gallery from './pages/Gallery';
 import Activities from './pages/Activities';
 import ActivityDetail from './pages/ActivityDetail';
+import ActivityTypeDetail from './pages/ActivityTypeDetail';
 import About from './pages/About';
 import './index.css';
 
@@ -20,6 +21,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/activities" element={<Activities />} />
           <Route path="/activity/:id" element={<ActivityDetail />} />
+          <Route path="/activity-type/:id" element={<ActivityTypeDetail />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
