@@ -14,6 +14,12 @@ export const activitesPasse = [
             participants: "Tout le groupe"
         },
         image: "https://placehold.co/800x400/e0e0e0/333333?text=Feu+de+Camp+2025",
+        gallery: [
+            "https://placehold.co/600x400/e0e0e0/333333?text=Feu+1",
+            "https://placehold.co/600x400/e0e0e0/333333?text=Feu+2",
+            "https://placehold.co/600x400/e0e0e0/333333?text=Feu+3",
+            "https://placehold.co/600x400/e0e0e0/333333?text=Feu+4",
+        ],
         isUpcoming: false
     },
     {
@@ -31,6 +37,12 @@ export const activitesPasse = [
             participants: "Pionniers"
         },
         image: "https://placehold.co/800x400/e0e0e0/333333?text=Action+Sociale",
+        gallery: [
+            "https://placehold.co/600x400/e0e0e0/333333?text=Action+1",
+            "https://placehold.co/600x400/e0e0e0/333333?text=Action+2",
+            "https://placehold.co/600x400/e0e0e0/333333?text=Action+3",
+            "https://placehold.co/600x400/e0e0e0/333333?text=Action+4"
+        ],
         isUpcoming: false
     },
     {
@@ -48,6 +60,12 @@ export const activitesPasse = [
             participants: "Tous les membres + Parents"
         },
         image: "https://placehold.co/800x400/e0e0e0/333333?text=Rentree+2025",
+        gallery: [
+            "https://placehold.co/600x400/e0e0e0/333333?text=Rentree+1",
+            "https://placehold.co/600x400/e0e0e0/333333?text=Rentree+2",
+            "https://placehold.co/600x400/e0e0e0/333333?text=Rentree+3",
+            "https://placehold.co/600x400/e0e0e0/333333?text=Rentree+4"
+        ],
         isUpcoming: false
     },
     {
@@ -65,6 +83,12 @@ export const activitesPasse = [
             participants: "Tous les membres + Parents"
         },
         image: "https://placehold.co/800x400/e0e0e0/333333?text=Rentree+2025",
+        gallery: [
+            "https://placehold.co/600x400/e0e0e0/333333?text=Rentree+1",
+            "https://placehold.co/600x400/e0e0e0/333333?text=Rentree+2",
+            "https://placehold.co/600x400/e0e0e0/333333?text=Rentree+3",
+            "https://placehold.co/600x400/e0e0e0/333333?text=Rentree+4"
+        ],
         isUpcoming: false
     }
 ];
