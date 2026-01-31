@@ -5,11 +5,13 @@ import district from '../assets/images/logo/dske.jpg';
 import ask from '../assets/images/logo/ask.jpg';
 import fesco from '../assets/images/logo/fesco.jpg';
 import minigsa from '../assets/images/logo/gsa2025.png';
-
 import meute from '../assets/images/logo-unites/meute.jpg';
 import lion from '../assets/images/logo-unites/lion.jpg';
 import panthere from '../assets/images/logo-unites/panthere.jpg';
 import ouragan from '../assets/images/logo-unites/ouragan.jpg';
+import paroisse from '../assets/images/logo-partenaires/paroisse-cec.png';
+import alphaeuro from '../assets/images/logo-unites/alphaeuro.jpeg';
+import cora from '../assets/images/logo-unites/cora.jpg';
 
 const About = () => {
     return (
@@ -80,13 +82,44 @@ const About = () => {
                 </div>
             </section>
 
+            {/* Ce que nous faisons */}
+            <section className="container what-we-do-section fadeInUp">
+                <h2 className="section-title-center unit-top">Ce que nous faisons</h2>
+                <div className="text-content" style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto' }}>
+                    <p>
+                        Le Groupe Scout Alpha propose une méthode éducative complète basées sur les valeurs du scoutisme.
+                        À travers le jeu, la vie en plein air et la prise de responsabilité, nous aidons les jeunes à
+                        devenir des citoyens actifs, heureux et utiles.
+                    </p>
+                    <p>
+                        Nos activités incluent des camps, des services communautaires, des formations techniques
+                        et des moments de partage spirituel, adaptés à chaque tranche d'âge.
+                    </p>
+                </div>
+            </section>
+
+            {/* Où nous sommes */}
+            <section className="container location-section">
+                <div className="image-content fadeInLeft">
+                    <img src={paroisse} alt="Notre Localisation" />
+                </div>
+                <div className="text-content fadeInRight">
+                    <h2 className="section-title-left">Où nous sommes</h2>
+                    <p>
+                        Le Groupe Scout Alpha est ancré au cœur de notre communauté. Nous sommes situés
+                        dans un cadre verdoyant et accessible, idéal pour les activités de plein air.
+                    </p>
+                    <p>
+                        Notre local se trouve à proximité de la paroisse, offrant un espace sécurisé
+                        et convivial pour nos réunions hebdomadaires et nos grands rassemblements.
+                    </p>
+                </div>
+            </section>
+
             {/* Nos Couleurs */}
             <section className="container colors-section">
-                <div className="colors-image fadeInLeft">
-                    <img src={Foulard} alt="Foulard Scout" />
-                </div>
-                <div className="colors-content fadeInRight">
-                    <h2 className="section-title-left">Nos couleurs</h2>
+                <div className="colors-content fadeInUp">
+                    <h2 className="section-title-center">Nos couleurs</h2>
                     <div className="color-circles">
                         <div className="color-item">
                             <div className="circle blue"></div>
@@ -128,7 +161,7 @@ const About = () => {
 
             {/* Nos Unités */}
             <section className="container units-section fadeInUp">
-                <h2 className="section-title-left">Nos unités</h2>
+                <h2 className="section-title-center unit-top">Nos unités</h2>
                 <div className="units-grid">
                     <div className="unit-item delay-1">
                         <img src={meute} alt="Meute Espoir" className="unit-logo" />
@@ -220,8 +253,14 @@ const About = () => {
                         <h3>Une grande famille</h3>
                     </div>
                     <div className="family-images fadeInRight">
-                        <img src="https://placehold.co/300x200/e0e0e0/333333?text=Famille+1" alt="Famille Alpha 1" />
-                        <img src="https://placehold.co/300x200/e0e0e0/333333?text=Famille+2" alt="Famille Alpha 2" />
+                        <div className="family-item">
+                            <img src={cora} alt="Communauté des Routiers Alpha" />
+                            <span className="family-legend">Communauté des Routiers Alpha</span>
+                        </div>
+                        <div className="family-item">
+                            <img src={alphaeuro} alt="Alpha Euro" />
+                            <span className="family-legend">Alpha Euro</span>
+                        </div>
                     </div>
                 </div>
             </section>

@@ -68,7 +68,7 @@ const Contact = () => {
                                     </div>
                                     <div className="info-text">
                                         <strong>Adresse</strong>
-                                        <span>519, LUKAYA, Quartier 5/ N'djili Kinshasa</span>
+                                        <span> Commune de N'djili, 519 avenue Lukaya, Kinshasa, Congo-Kinshasa</span>
                                     </div>
                                 </li>
                                 <li className="info-item">
