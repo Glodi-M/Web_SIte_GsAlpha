@@ -1,0 +1,62 @@
+.anniversary-section {
+    padding: 80px 10px;
+    background-color: #fff;
+    text-align: center;
+
+}
+
+.anniversary-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.anniversary-media {
+    width: 100%;
+    height: 400px;
+    background-color: #e0e0e0;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    /* Placeholder for future content */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+}
+
+.anniversary-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.anniversary-years {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: yellow;
+    letter-spacing: 2px;
+}
+
+.anniversary-title {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+    .anniversary-media {
+        height: 250px;
+    }
+
+    .anniversary-title {
+        font-size: 1.5rem;
+    }
+
+    .anniversary-years {
+        font-size: 1.2rem;
+    }
+}
