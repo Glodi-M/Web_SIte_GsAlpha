@@ -138,6 +138,28 @@ const About = () => {
                 </div>
             </section>
 
+            {/* Création et Évolution */}
+            <section className="container history-section">
+                <div className="text-content fadeInLeft">
+                    <h2 className="section-title-left">Notre Fondation</h2>
+                    <p>
+                        Le Groupe Scout Alpha a été fondé par Monsieur <strong>Bayonzimina Tortue</strong>.
+                        Sa vision était de créer un espace où les jeunes pourraient s'épanouir à travers les valeurs du scoutisme.
+                    </p>
+                    <p>
+                        Depuis sa création, le groupe a connu une évolution constante, grandissant en nombre et en impact.
+                        De la première patrouille à la structure complète d'aujourd'hui, nous avons traversé les époques avec passion.
+                    </p>
+                    <p>
+                        Au fil des ans, de nombreux chefs de groupe se sont succédé à la tête de notre unité,
+                        chacun transmettant le flambeau et l'esprit de service aux générations suivantes.
+                    </p>
+                </div>
+                <div className="image-content fadeInRight">
+                    <img src="https://placehold.co/500x400/e0e0e0/333333?text=Fondateur+et+Evolution" alt="Fondation du groupe" />
+                </div>
+            </section>
+
             {/* Notre Devise */}
             <section className="devise-section fadeInUp">
                 <div className="container">

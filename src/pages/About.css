@@ -213,7 +213,7 @@ section {
 .location-section {
     display: flex;
     align-items: center;
-    gap: 60px;
+    gap: 100px;
     margin-top: 80px;
 }
 
@@ -343,7 +343,7 @@ section {
     align-items: center;
     justify-content: center;
     gap: 80px;
-    margin: 80px 0;
+    margin: 80px auto;
 }
 
 .colors-content {
