@@ -153,7 +153,7 @@ const About = () => {
                         dans un cadre verdoyant et accessible, idéal pour les activités de plein air.
                     </p>
                     <p>
-                        Notre local se trouve à proximité de la paroisse, offrant un espace sécurisé
+                        Notre local se trouve dans l'enceinte de la paroisse, offrant un espace sécurisé
                         et convivial pour nos réunions hebdomadaires et nos grands rassemblements.
                     </p>
                 </div>
@@ -186,16 +186,27 @@ const About = () => {
                 <div className="text-content fadeInLeft">
                     <h2 className="section-title-left">Notre Fondation</h2>
                     <p>
-                        Le Groupe Scout Alpha a été fondé par Monsieur <strong>Bayonzimina Tortue</strong>.
-                        Sa vision était de créer un espace où les jeunes pourraient s'épanouir à travers les valeurs du scoutisme.
+                        Le Groupe Scout Alpha a été fondé par Monsieur <strong>Bayonzimina Tortue</strong>,
+                        alors enseignant à l'école de la paroisse. À l'origine, le groupe était destiné
+                        exclusivement aux élèves de cette école. Avec le temps, il s'est ouvert à toute
+                        la communauté paroissiale, accueillant de plus en plus de jeunes.
                     </p>
                     <p>
-                        Depuis sa création, le groupe a connu une évolution constante, grandissant en nombre et en impact.
-                        De la première patrouille à la structure complète d'aujourd'hui, nous avons traversé les époques avec passion.
+                        Au fil des années, le groupe a connu une croissance remarquable : de quelques
+                        pionniers, nous sommes passés à plus de <strong>130 membres actifs</strong> répartis
+                        dans nos différentes unités. Cette expansion témoigne de la vitalité et de
+                        l'engagement de notre communauté scoute.
                     </p>
                     <p>
-                        Au fil des ans, de nombreux chefs de groupe se sont succédé à la tête de notre unité,
-                        chacun transmettant le flambeau et l'esprit de service aux générations suivantes.
+                        En 2026, le Groupe Scout Alpha célèbre fièrement ses <strong>40 ans d'existence</strong>.
+                        Quatre décennies de service, de fraternité et d'aventure qui ont marqué des
+                        générations de jeunes et d'adultes dans notre communauté.
+                    </p>
+                    <p>
+                        Depuis sa création, environ <strong>8 chefs de groupe</strong> se sont succédé à la tête
+                        de notre unité, chacun transmettant le flambeau et l'esprit de service aux générations
+                        suivantes. Aujourd'hui, le groupe est dirigé par <strong>Gédeon MATONDO KIMBANGI</strong>,
+                        qui poursuit cette noble mission avec dévouement.
                     </p>
                 </div>
                 <div className="image-content fadeInRight">
