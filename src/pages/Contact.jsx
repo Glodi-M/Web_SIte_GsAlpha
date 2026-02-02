@@ -5,6 +5,8 @@ import banner from '../assets/images/background/banner-contact.jpg';
 
 const Contact = () => {
     const [isSubmitted, setIsSubmitted] = useState(false);
+    const [isLoading, setIsLoading] = useState(false);
+    const [error, setError] = useState(null);
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -19,37 +21,35 @@ const Contact = () => {
         });
     };
 
-    const [isLoading, setIsLoading] = useState(false);
-    const [error, setError] = useState(null);
-
     const handleSubmit = async (e) => {
         e.preventDefault();
         setIsLoading(true);
         setError(null);
 
+        const encodedData = new URLSearchParams({
+            'form-name': 'contact',
+            ...formData
+        }).toString();
+
         try {
-            const response = await fetch('/', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-                body: new URLSearchParams({
-                    'form-name': 'contact',
-                    ...formData
-                }).toString()
+            const response = await fetch("/", {
+                method: "POST",
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                body: encodedData,
             });
 
             if (response.ok) {
                 setIsSubmitted(true);
                 setFormData({ name: '', email: '', subject: '', message: '' });
 
-                // Hide success message after 5 seconds
                 setTimeout(() => {
                     setIsSubmitted(false);
                 }, 5000);
             } else {
-                throw new Error('Erreur lors de l\'envoi du formulaire');
+                throw new Error("Serveur injoignable");
             }
         } catch (err) {
-            setError('Une erreur est survenue. Veuillez réessayer.');
+            setError("Une erreur est survenue. Veuillez réessayer.");
             console.error('Form submission error:', err);
         } finally {
             setIsLoading(false);
@@ -102,6 +102,7 @@ const Contact = () => {
                             onSubmit={handleSubmit}
                         >
                             <input type="hidden" name="form-name" value="contact" />
+
                             <div className="form-group">
                                 <label htmlFor="name">Nom complet <span className="required">*</span></label>
                                 <input
@@ -229,9 +230,6 @@ const Contact = () => {
                         </div>
                     </div>
                 </div>
-
-
-
 
                 <div className="contact-qr-section fadeInUp delay-3">
                     <div className="qr-card">
