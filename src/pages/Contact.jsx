@@ -1,9 +1,61 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Contact.css';
 
 import banner from '../assets/images/background/banner-contact.jpg';
 
 const Contact = () => {
+    const [isSubmitted, setIsSubmitted] = useState(false);
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        subject: '',
+        message: ''
+    });
+
+    const handleChange = (e) => {
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value
+        });
+    };
+
+    const [isLoading, setIsLoading] = useState(false);
+    const [error, setError] = useState(null);
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setIsLoading(true);
+        setError(null);
+
+        try {
+            const response = await fetch('/', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                body: new URLSearchParams({
+                    'form-name': 'contact',
+                    ...formData
+                }).toString()
+            });
+
+            if (response.ok) {
+                setIsSubmitted(true);
+                setFormData({ name: '', email: '', subject: '', message: '' });
+
+                // Hide success message after 5 seconds
+                setTimeout(() => {
+                    setIsSubmitted(false);
+                }, 5000);
+            } else {
+                throw new Error('Erreur lors de l\'envoi du formulaire');
+            }
+        } catch (err) {
+            setError('Une erreur est survenue. Veuillez réessayer.');
+            console.error('Form submission error:', err);
+        } finally {
+            setIsLoading(false);
+        }
+    };
+
     return (
         <main className="contact-page">
             <section className="contact-hero" style={{ backgroundImage: `url(${banner})` }}>
@@ -27,30 +79,93 @@ const Contact = () => {
                         <div className="form-header">
                             <h3>Envoyez-nous un message</h3>
                         </div>
-                        <form className="contact-form">
+
+                        {isSubmitted && (
+                            <div className="success-message">
+                                <i className="fas fa-check-circle"></i>
+                                <span>Votre message a été envoyé avec succès !</span>
+                            </div>
+                        )}
+
+                        {error && (
+                            <div className="error-message">
+                                <i className="fas fa-exclamation-circle"></i>
+                                <span>{error}</span>
+                            </div>
+                        )}
+
+                        <form
+                            className="contact-form"
+                            name="contact"
+                            method="POST"
+                            data-netlify="true"
+                            onSubmit={handleSubmit}
+                        >
+                            <input type="hidden" name="form-name" value="contact" />
                             <div className="form-group">
-                                <label htmlFor="name">Nom complet</label>
-                                <input type="text" id="name" name="name" placeholder="Votre nom" />
+                                <label htmlFor="name">Nom complet <span className="required">*</span></label>
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    placeholder="Votre nom"
+                                    value={formData.name}
+                                    onChange={handleChange}
+                                    required
+                                />
                             </div>
 
                             <div className="form-group">
-                                <label htmlFor="email">Adresse E-mail</label>
-                                <input type="email" id="email" name="email" placeholder="votre@email.com" />
+                                <label htmlFor="email">Adresse E-mail <span className="required">*</span></label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="votre@email.com"
+                                    value={formData.email}
+                                    onChange={handleChange}
+                                    required
+                                />
                             </div>
 
                             <div className="form-group">
-                                <label htmlFor="subject">Sujet</label>
-                                <input type="text" id="subject" name="subject" placeholder="Sujet de votre message" />
+                                <label htmlFor="subject">Sujet <span className="required">*</span></label>
+                                <input
+                                    type="text"
+                                    id="subject"
+                                    name="subject"
+                                    placeholder="Sujet de votre message"
+                                    value={formData.subject}
+                                    onChange={handleChange}
+                                    required
+                                />
                             </div>
 
                             <div className="form-group">
-                                <label htmlFor="message">Message</label>
-                                <textarea id="message" name="message" rows="5" placeholder="Comment pouvons-nous vous aider ?"></textarea>
+                                <label htmlFor="message">Message <span className="required">*</span></label>
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    rows="5"
+                                    placeholder="Comment pouvons-nous vous aider ?"
+                                    value={formData.message}
+                                    onChange={handleChange}
+                                    required
+                                ></textarea>
                             </div>
 
-                            <button type="submit" className="btn-submit">
-                                <span>Envoyer le message</span>
-                                <i className="fas fa-paper-plane"></i>
+                            <button type="submit" className="btn-submit" disabled={isLoading}>
+                                {isLoading ? (
+                                    <>
+                                        <span>Envoi en cours...</span>
+                                        <i className="fas fa-spinner fa-spin"></i>
+                                    </>
+                                ) : (
+                                    <>
+                                        <span>Envoyer le message</span>
+                                        <i className="fas fa-paper-plane"></i>
+                                    </>
+                                )}
                             </button>
                         </form>
                     </div>
