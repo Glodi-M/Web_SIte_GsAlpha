@@ -235,6 +235,38 @@ const About = () => {
                 </div>
             </section>
 
+            {/* Notre Hymne */}
+            <section className="hymn-section fadeInUp">
+                <div className="container">
+                    <h2 className="section-title-center">Notre Hymne</h2>
+                    <div className="hymn-content">
+                        <div className="hymn-icon">
+                            <i className="fas fa-music"></i>
+                        </div>
+                        <div className="hymn-lyrics">
+                            <p className="hymn-verse">
+                                <em>« Sous un ciel sans etoile Alpha, unis dans la paix<br />
+                                    Devant notre emblème qui monte et qui flotte plus haut<br />
+                                    Saluons le de tous coeurs,c'est ce symbole d'amour<br />
+                                    le bleu,le blanc et le jaune,nos couleurs sacrées<br />
+                                    dans l'unité, avec courtoisie, hoo dans l'espoir confiant nous à l'éternel<br />
+                                    dans la joie, dans la foi, main dans la main, pour mieux servir<br />
+                                    en travaillant, persévérant, dans la discipline, ohh oui engageons nous <br />
+                                    dans l'unité, la courtoise
+                                    »</em>
+                            </p>
+                            <p className="hymn-placeholder">
+                                <small>Sous un ciel</small>
+                            </p>
+                        </div>
+                        <div className="hymn-author">
+                            <span>Composé par</span>
+                            <strong>Cize NZUNGU Nkosi</strong>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             {/* Nos Unités */}
             <section className="container units-section fadeInUp">
                 <h2 className="section-title-center unit-top">Nos unités</h2>

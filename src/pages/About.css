@@ -451,6 +451,83 @@ section {
     font-size: 0.8em;
 }
 
+/* --- Hymn Section --- */
+.hymn-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 80px 20px;
+}
+
+.hymn-content {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    background: #fff;
+    padding: 50px 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+    position: relative;
+    border-top: 5px solid var(--accent-yellow, #ffe600);
+}
+
+.hymn-icon {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(145deg, #002b5b, #004aad);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 15px rgba(0, 43, 91, 0.3);
+}
+
+.hymn-icon i {
+    font-size: 1.5rem;
+    color: var(--accent-yellow, #ffe600);
+}
+
+.hymn-lyrics {
+    margin-top: 30px;
+}
+
+.hymn-verse {
+    font-family: 'Georgia', serif;
+    font-size: 1.3rem;
+    line-height: 2;
+    color: var(--primary-blue, #002b5b);
+    margin-bottom: 20px;
+}
+
+.hymn-placeholder {
+    color: #999;
+    font-style: italic;
+}
+
+.hymn-author {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.hymn-author span {
+    font-size: 0.9rem;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.hymn-author strong {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    color: var(--primary-blue, #002b5b);
+}
+
 /* --- Units Section --- */
 .units-grid {
     display: flex;
