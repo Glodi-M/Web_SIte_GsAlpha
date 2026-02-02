@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './About.css';
 import Foulard from '../assets/images/logo/imagefoulard.jpg';
 import district from '../assets/images/logo/dske.jpg';
@@ -12,6 +12,49 @@ import ouragan from '../assets/images/logo-unites/ouragan.jpg';
 import paroisse from '../assets/images/logo-partenaires/paroisse-cec.png';
 import alphaeuro from '../assets/images/logo-unites/alphaeuro.jpeg';
 import cora from '../assets/images/logo-unites/cora.jpg';
+
+const CountUp = ({ end, duration = 2000 }) => {
+    const [count, setCount] = useState(0);
+    const countRef = useRef(null);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                const [entry] = entries;
+                if (entry.isIntersecting) {
+                    let start = 0;
+                    const increment = end / (duration / 16); // 60fps
+
+                    const timer = setInterval(() => {
+                        start += increment;
+                        if (start >= end) {
+                            setCount(end);
+                            clearInterval(timer);
+                        } else {
+                            setCount(Math.ceil(start));
+                        }
+                    }, 16);
+
+                    observer.unobserve(entry.target);
+                }
+            },
+            { threshold: 0.5 }
+        );
+
+        if (countRef.current) {
+            observer.observe(countRef.current);
+        }
+
+        return () => {
+            if (countRef.current) {
+                observer.unobserve(countRef.current);
+            }
+        };
+    }, [end, duration]);
+
+    return <span ref={countRef}>{count}</span>;
+};
+
 
 const About = () => {
     return (
@@ -214,23 +257,23 @@ const About = () => {
                     <h2 className="section-title-center">Nos effectifs en chiffres</h2>
                     <div className="stats-grid">
                         <div className="stat-item delay-1">
-                            <span className="stat-number">45</span>
+                            <span className="stat-number"><CountUp end={45} /></span>
                             <span className="stat-label">Meute</span>
                         </div>
                         <div className="stat-item delay-2">
-                            <span className="stat-number">32</span>
+                            <span className="stat-number"><CountUp end={32} /></span>
                             <span className="stat-label">Troupe</span>
                         </div>
                         <div className="stat-item delay-3">
-                            <span className="stat-number">28</span>
+                            <span className="stat-number"><CountUp end={28} /></span>
                             <span className="stat-label">Compagnie</span>
                         </div>
                         <div className="stat-item delay-4">
-                            <span className="stat-number">15</span>
+                            <span className="stat-number"><CountUp end={15} /></span>
                             <span className="stat-label">Clan</span>
                         </div>
                         <div className="stat-item delay-5">
-                            <span className="stat-number">12</span>
+                            <span className="stat-number"><CountUp end={12} /></span>
                             <span className="stat-label">Adultes</span>
                         </div>
                     </div>
