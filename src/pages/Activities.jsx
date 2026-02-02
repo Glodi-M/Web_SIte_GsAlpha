@@ -4,6 +4,13 @@ import { activityTypes } from '../data/activityTypes';
 
 import './Activities.css';
 import robert from '../assets/images/logo/baden-powell.jpg';
+import district from '../assets/images/logo/dske.jpg';
+import ask from '../assets/images/logo/ask.jpg';
+import fesco from '../assets/images/logo/fesco.jpg';
+import worldscout from '../assets/images/logo-partenaires/World-Scouting-Logo-New.png';
+import worldscout1 from '../assets/images/logo-partenaires/World-Scouting-Symbol.png';
+import regionalBadge from '../assets/images/logo-partenaires/Regional_badge_of_African_Scout_Region.png';
+import logocec from '../assets/images/logo-partenaires/logo-cec.webp';
 
 
 const Activities = () => {
@@ -76,9 +83,14 @@ const Activities = () => {
                 </div>
 
                 <div className="partners-logos">
-                    <div className="partner-logo"><i className="fas fa-fleur-de-lis"></i></div>
-                    <div className="partner-logo"><i className="fas fa-globe-africa"></i></div>
-                    <div className="partner-logo"><i className="fas fa-campground"></i></div>
+                    <div className="partner-logo"><img src={worldscout} alt="World Scout" /></div>
+                    <div className="partner-logo"><img src={worldscout1} alt="World Scout" /></div>
+                    <div className="partner-logo"><img src={regionalBadge} alt="Regional Badge" /></div>
+                    <div className="partner-logo"><img src={fesco} alt="FESCO" /></div>
+                    <div className="partner-logo"><img src={ask} alt="Association des Scouts de Kinshasa" /></div>
+                    <div className="partner-logo"><img src={district} alt="District Scout Kin-Est" /></div>
+                    <div className="partner-logo"><img src={logocec} alt="logo-cec" /></div>
+
                 </div>
             </div>
         </main>

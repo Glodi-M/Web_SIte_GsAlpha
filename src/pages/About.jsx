@@ -18,6 +18,7 @@ const CountUp = ({ end, duration = 2000 }) => {
     const countRef = useRef(null);
 
     useEffect(() => {
+        const node = countRef.current;
         const observer = new IntersectionObserver(
             (entries) => {
                 const [entry] = entries;
@@ -41,13 +42,13 @@ const CountUp = ({ end, duration = 2000 }) => {
             { threshold: 0.5 }
         );
 
-        if (countRef.current) {
-            observer.observe(countRef.current);
+        if (node) {
+            observer.observe(node);
         }
 
         return () => {
-            if (countRef.current) {
-                observer.unobserve(countRef.current);
+            if (node) {
+                observer.unobserve(node);
             }
         };
     }, [end, duration]);

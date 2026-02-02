@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { activitesAvenir } from '../data/activitesAvenir';
 import { activitesPasse } from '../data/activitesPasse';
+import Alpha40 from '../assets/images/logo/gsa-banner.jpg';
+
 
 export const ProjectEducatif = () => {
     return (
@@ -30,11 +32,9 @@ export const ProjectEducatif = () => {
 export const News = () => {
     return (
         <section className="news container">
-            <div className="news-header fadeInUp">
-                <div>
-                    <h2 className="section-title" style={{ marginBottom: '10px', textAlign: 'left', marginTop: 0 }}>Nos prochaines activités</h2>
-                    <p className="news-subtitle">Découvrez les nouvelles activités du groupe scouts alpha!</p>
-                </div>
+            <h2 className="section-title fadeInUp" style={{ marginBottom: '10px', marginTop: '60px' }}>Nos prochaines activités</h2>
+            <p className="news-subtitle fadeInUp" style={{ textAlign: 'center', marginBottom: '30px' }}>Découvrez les nouvelles activités du groupe scouts alpha!</p>
+            <div className="news-header fadeInUp" style={{ justifyContent: 'flex-end' }}>
                 <Link to="/activities" className="view-all-link">Voir tout <i className="fas fa-arrow-right"></i></Link>
             </div>
 
@@ -121,7 +121,7 @@ export const GroupAlpha = () => {
         <section className="group-alpha container">
             <h2 className="section-title fadeInUp">Le Groupe Scout Alpha</h2>
             <div className="main-group-photo fadeInUp delay-1">
-                <img src="https://placehold.co/1200x400/e0e0e0/333333?text=Photo+de+Groupe" alt="Groupe Scout Alpha" />
+                <img src={Alpha40} alt="Groupe Scout Alpha" />
             </div>
             <div className="grid-gallery">
                 <div className="grid-item fadeInUp delay-2"></div>

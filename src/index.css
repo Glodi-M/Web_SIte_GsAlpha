@@ -332,6 +332,9 @@ nav a.active {
   font-size: 1.1rem;
   margin-top: 5px;
   max-width: 600px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .view-all-link {
@@ -515,10 +518,7 @@ nav a.active {
   font-size: 1.1rem;
 }
 
-/* Remove old specific styles that clash */
-.activities-list {
-  /* Already handled in shared grid above */
-}
+/* Dernières Activités Specifics */
 
 .activity-card {
   width: auto;

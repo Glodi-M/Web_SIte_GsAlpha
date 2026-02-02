@@ -1,6 +1,6 @@
 import React from 'react';
 import './Anniversary.css';
-import alpha from '../assets/images/logo/alpha40.jpg';
+import alphaOuverture from '../assets/images/photo-alpha/gsa-ouverture.jpg';
 
 const Anniversary = () => {
     return (
@@ -24,7 +24,7 @@ const Anniversary = () => {
                 </div>
                 <div className="anniversary-media">
                     <div className="media-frame">
-                        <img src={alpha} alt="40 ans Groupe Scout Alpha" />
+                        <img src={alphaOuverture} alt="40 ans Groupe Scout Alpha" />
                         <div className="badge-glow"></div>
                     </div>
                 </div>
