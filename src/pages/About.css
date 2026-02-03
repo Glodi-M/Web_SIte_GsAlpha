@@ -217,6 +217,75 @@ section {
     margin-top: 80px;
 }
 
+/* --- Projet Éducatif Section --- */
+.project-educatif-section {
+    margin-top: 80px;
+    padding: 60px 0;
+}
+
+.project-educatif-section .project-content {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-top: 40px;
+}
+
+.project-educatif-section .project-text {
+    flex: 1;
+}
+
+.project-educatif-section .project-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.project-list {
+    list-style: none;
+    padding: 0;
+}
+
+.project-list li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 0;
+    font-size: 1rem;
+    color: #444;
+    border-bottom: 1px solid #eee;
+}
+
+.project-list li:last-child {
+    border-bottom: none;
+}
+
+.project-list li i {
+    color: #28a745;
+    font-size: 1.2rem;
+}
+
+.project-educatif-section .project-image {
+    flex: 1;
+}
+
+.project-educatif-section .project-image img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease;
+}
+
+.project-educatif-section .project-image img:hover {
+    transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+    .project-educatif-section .project-content {
+        flex-direction: column;
+    }
+}
+
 .text-content {
     flex: 1;
 }

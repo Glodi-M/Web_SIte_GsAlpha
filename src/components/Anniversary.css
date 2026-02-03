@@ -103,6 +103,77 @@
     border-radius: 2px;
 }
 
+/* Countdown Timer */
+.countdown-timer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 30px;
+    flex-wrap: nowrap;
+}
+
+.countdown-item {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 215, 0, 0.3);
+    border-radius: 10px;
+    padding: 12px 10px;
+    width: 70px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.countdown-value {
+    display: block;
+    font-family: 'Courier New', monospace;
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: #fff;
+    line-height: 1;
+    margin-bottom: 5px;
+}
+
+.countdown-value.seconds {
+    color: #ffd700;
+}
+
+.countdown-label {
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.6);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.countdown-separator {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #ffd700;
+    animation: blink 1s infinite;
+    flex-shrink: 0;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.3;
+    }
+}
+
+.countdown-celebration {
+    background: rgba(255, 215, 0, 0.2);
+    border: 1px solid #ffd700;
+    border-radius: 10px;
+    padding: 15px 25px;
+    margin-bottom: 30px;
+    color: #ffd700;
+    font-weight: 600;
+}
+
 .anniversary-media {
     flex: 1;
     display: flex;

@@ -126,6 +126,30 @@ const About = () => {
                 </div>
             </section>
 
+            {/* Notre Projet Éducatif */}
+            <section className="container project-educatif-section">
+                <h2 className="section-title fadeInUp">Notre projet éducatif</h2>
+                <div className="project-content">
+                    <div className="project-text fadeInLeft">
+                        <p>
+                            Le scoutisme est une école de vie. Notre projet éducatif vise à former des jeunes
+                            responsables, autonomes et engagés dans la société. À travers nos activités, nous
+                            développons :
+                        </p>
+                        <ul className="project-list">
+                            <li><i className="fas fa-check-circle"></i> Le sens des responsabilités et du leadership</li>
+                            <li><i className="fas fa-check-circle"></i> L'esprit d'équipe et la solidarité</li>
+                            <li><i className="fas fa-check-circle"></i> Le respect de la nature et de l'environnement</li>
+                            <li><i className="fas fa-check-circle"></i> La débrouillardise et l'autonomie</li>
+                            <li><i className="fas fa-check-circle"></i> Les valeurs chrétiennes et morales</li>
+                        </ul>
+                    </div>
+                    <div className="project-image fadeInRight">
+                        <img src="https://placehold.co/400x350/e0e0e0/333333?text=Projet+Educatif" alt="Projet éducatif" />
+                    </div>
+                </div>
+            </section>
+
             {/* Ce que nous faisons */}
             <section className="container what-we-do-section fadeInUp">
                 <h2 className="section-title-center unit-top">Ce que nous faisons</h2>
