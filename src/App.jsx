@@ -9,6 +9,7 @@ import Activities from './pages/Activities';
 import ActivityDetail from './pages/ActivityDetail';
 import ActivityTypeDetail from './pages/ActivityTypeDetail';
 import About from './pages/About';
+import NotFound from './pages/NotFound';
 import './index.css';
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
           <Route path="/activity-type/:id" element={<ActivityTypeDetail />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
       </div>

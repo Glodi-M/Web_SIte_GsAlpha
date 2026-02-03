@@ -1,0 +1,169 @@
+/* 404 Not Found Page */
+.not-found-page {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 40px 20px;
+}
+
+.not-found-content {
+    text-align: center;
+    max-width: 600px;
+}
+
+/* Error Code Display */
+.error-code {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.error-code .four {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 8rem;
+    font-weight: 800;
+    color: var(--primary-blue);
+    line-height: 1;
+}
+
+.error-code .zero {
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(145deg, var(--primary-blue), #004aad);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: spin 10s linear infinite;
+}
+
+.error-code .zero i {
+    font-size: 4rem;
+    color: var(--accent-yellow);
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Text Content */
+.not-found-content h1 {
+    font-size: 2.5rem;
+    color: var(--primary-blue);
+    margin-bottom: 15px;
+}
+
+.not-found-content p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.not-found-content .subtitle {
+    font-size: 1rem;
+    color: #888;
+    margin-bottom: 40px;
+}
+
+/* Action Buttons */
+.not-found-actions {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.btn-home,
+.btn-contact {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-home {
+    background: var(--primary-blue);
+    color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 43, 91, 0.3);
+}
+
+.btn-home:hover {
+    background: var(--accent-yellow);
+    color: var(--primary-blue);
+    transform: translateY(-3px);
+}
+
+.btn-contact {
+    background: transparent;
+    color: var(--primary-blue);
+    border: 2px solid var(--primary-blue);
+}
+
+.btn-contact:hover {
+    background: var(--primary-blue);
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+/* Scout Message */
+.scout-message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px 30px;
+    background: rgba(0, 43, 91, 0.05);
+    border-radius: 10px;
+    border-left: 4px solid var(--accent-yellow);
+}
+
+.scout-message i {
+    font-size: 1.5rem;
+    color: var(--primary-blue);
+}
+
+.scout-message span {
+    font-style: italic;
+    color: #555;
+    font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .error-code .four {
+        font-size: 5rem;
+    }
+
+    .error-code .zero {
+        width: 80px;
+        height: 80px;
+    }
+
+    .error-code .zero i {
+        font-size: 2.5rem;
+    }
+
+    .not-found-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .not-found-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+}
