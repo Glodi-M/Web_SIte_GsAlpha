@@ -993,11 +993,73 @@ section {
 
 @media (max-width: 768px) {
     .hero-content h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .hero-content p {
         font-size: 1rem;
+    }
+
+    .section-title-left {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    .section-title-center {
+        font-size: 1.5rem;
+    }
+
+    /* Affiliation cards mobile */
+    .affiliation-grid {
+        gap: 20px;
+    }
+
+    .affiliation-card {
+        width: 100%;
+        max-width: 300px;
+        padding: 25px 20px;
+    }
+
+    .affiliation-icon {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 15px;
+    }
+
+    .affiliation-card h3 {
+        font-size: 1rem;
+    }
+
+    .affiliation-card p {
+        font-size: 0.85rem;
+    }
+
+    /* Values section mobile */
+    .values-grid {
+        gap: 15px;
+    }
+
+    .value-item {
+        padding: 20px 15px;
+        min-width: 130px;
+    }
+
+    /* Devise section mobile */
+    .devise-cards {
+        gap: 15px;
+    }
+
+    .devise-card {
+        padding: 20px 15px;
+        min-width: 80px;
+    }
+
+    .devise-card i {
+        font-size: 1.5rem;
+    }
+
+    .devise-card h3 {
+        font-size: 0.9rem;
     }
 
     .family-images {
@@ -1007,5 +1069,65 @@ section {
     .family-images img {
         width: 100%;
         max-width: 300px;
+    }
+
+    /* Units section mobile */
+    .unit-cards {
+        gap: 15px;
+    }
+
+    .unit-card {
+        padding: 20px 15px;
+    }
+
+    .unit-logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    /* Statistics mobile */
+    .statistics-grid {
+        gap: 15px;
+    }
+
+    .stat-card {
+        padding: 20px 15px;
+    }
+
+    .stat-number {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 1.6rem;
+    }
+
+    .section-title-left,
+    .section-title-center {
+        font-size: 1.3rem;
+    }
+
+    .affiliation-card {
+        padding: 20px 15px;
+    }
+
+    .affiliation-icon {
+        width: 55px;
+        height: 55px;
+    }
+
+    .value-item {
+        min-width: 100px;
+        padding: 15px 10px;
+    }
+
+    .value-icon i {
+        font-size: 1.3rem;
+    }
+
+    .value-item span {
+        font-size: 0.8rem;
     }
 }

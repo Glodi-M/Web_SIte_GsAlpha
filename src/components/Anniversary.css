@@ -259,6 +259,7 @@
 
     .anniversary-title {
         font-size: 1.8rem;
+        text-align: center;
     }
 
     .anniversary-title .highlight {
@@ -267,6 +268,7 @@
 
     .anniversary-description {
         font-size: 1rem;
+        text-align: center;
     }
 
     .date-year {
