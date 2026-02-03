@@ -253,16 +253,81 @@
 }
 
 @media (max-width: 768px) {
+    .anniversary-section {
+        padding: 60px 15px;
+    }
+
     .anniversary-title {
+        font-size: 1.8rem;
+    }
+
+    .anniversary-title .highlight {
         font-size: 2.2rem;
     }
 
+    .anniversary-description {
+        font-size: 1rem;
+    }
+
     .date-year {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
+    }
+
+    .countdown-timer {
+        justify-content: center;
+    }
+
+    .countdown-item {
+        width: 55px;
+        padding: 10px 8px;
+    }
+
+    .countdown-value {
+        font-size: 1.3rem;
+    }
+
+    .countdown-label {
+        font-size: 0.55rem;
+    }
+
+    .countdown-separator {
+        font-size: 1rem;
     }
 
     .media-frame img {
         width: 100%;
-        max-width: 300px;
+        max-width: 280px;
+    }
+}
+
+@media (max-width: 480px) {
+    .anniversary-section {
+        padding: 40px 10px;
+    }
+
+    .anniversary-title {
+        font-size: 1.5rem;
+    }
+
+    .anniversary-title .highlight {
+        font-size: 1.8rem;
+    }
+
+    .countdown-item {
+        width: 50px;
+        padding: 8px 6px;
+    }
+
+    .countdown-value {
+        font-size: 1.1rem;
+    }
+
+    .countdown-separator {
+        font-size: 0.9rem;
+    }
+
+    .anniversary-subtitle {
+        font-size: 0.75rem;
+        padding: 6px 12px;
     }
 }

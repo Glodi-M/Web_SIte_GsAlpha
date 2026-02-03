@@ -214,10 +214,38 @@
     border-radius: 50%;
 }
 
-/* Responsive */
+/* Responsive - Tablet */
+@media (max-width: 1024px) {
+    .activities-grid {
+        gap: 25px;
+    }
+
+    .activities-title {
+        font-size: 2rem;
+    }
+}
+
+/* Responsive - Mobile */
 @media (max-width: 768px) {
     .activities-grid {
         grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .activities-title {
+        font-size: 1.6rem;
+    }
+
+    .activities-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .activity-card-image {
+        height: 180px;
+    }
+
+    .activity-card-content {
+        padding: 15px;
     }
 
     .quote-section {
@@ -228,6 +256,17 @@
 
     .quote-author {
         margin: 0 auto;
+    }
+}
+
+/* Responsive - Small Mobile */
+@media (max-width: 480px) {
+    .activities-title {
+        font-size: 1.4rem;
+    }
+
+    .activity-card-image {
+        height: 150px;
     }
 }
 
