@@ -8,7 +8,7 @@ const Footer = () => {
             <div className="footer-container">
                 <div className="footer-socials">
                     <a
-                        href="https://www.facebook.com/groupescoutalpha"
+                        href="https://www.facebook.com/share/17mJhzCk4i/?mibextid=wwXIfr"
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="Suivez-nous sur Facebook"

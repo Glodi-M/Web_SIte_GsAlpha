@@ -287,15 +287,26 @@ section {
 }
 
 .text-content {
-    flex: 1;
+    flex: 1.2;
 }
 
 .text-content p {
     text-align: justify;
-    line-height: 1.8;
-    font-size: 1.05rem;
+    line-height: 1.9;
+    font-size: 1.1rem;
     color: #555;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    border-left: 3px solid var(--accent-yellow, #ffe600);
+}
+
+.text-content p:first-of-type::first-letter {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary-blue, #002b5b);
+    float: left;
+    margin-right: 10px;
+    line-height: 1;
 }
 
 .image-content {
@@ -304,14 +315,102 @@ section {
 }
 
 .image-content img {
-    width: 80%;
-    border-radius: 20px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
     transition: transform 0.4s ease;
+    border: 4px solid rgba(0, 43, 91, 0.1);
 }
 
 .image-content img:hover {
-    transform: scale(1.02);
+    transform: scale(1.03);
+}
+
+/* --- Foundation Section --- */
+.foundation-section {
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.foundation-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 60px;
+}
+
+.foundation-text {
+    flex: 1.3;
+}
+
+.foundation-paragraphs {
+    background: linear-gradient(135deg, #f8f9fa 0%, #fff 100%);
+    padding: 30px;
+    border-radius: 15px;
+    border-left: 4px solid var(--accent-yellow, #ffe600);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.foundation-paragraphs p {
+    font-size: 1.05rem;
+    line-height: 1.9;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.foundation-paragraphs p:last-child {
+    margin-bottom: 0;
+}
+
+.foundation-paragraphs p strong {
+    color: var(--primary-blue, #002b5b);
+    font-weight: 700;
+}
+
+.foundation-image {
+    flex: 1;
+    position: relative;
+}
+
+.foundation-image img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease;
+}
+
+.foundation-image img:hover {
+    transform: scale(1.02) rotate(1deg);
+}
+
+.image-badge {
+    position: absolute;
+    bottom: -15px;
+    right: -15px;
+    background: linear-gradient(135deg, var(--accent-yellow, #ffe600) 0%, #ffc107 100%);
+    color: var(--primary-blue, #002b5b);
+    padding: 15px 25px;
+    border-radius: 50px;
+    font-weight: 800;
+    font-size: 1.1rem;
+    box-shadow: 0 10px 25px rgba(255, 193, 7, 0.4);
+}
+
+@media (max-width: 768px) {
+    .foundation-content {
+        flex-direction: column;
+    }
+
+    .foundation-paragraphs {
+        padding: 20px;
+    }
+
+    .image-badge {
+        bottom: -10px;
+        right: 10px;
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
 }
 
 /* --- Values Section --- */
