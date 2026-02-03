@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Anniversary.css';
 import alphaOuverture from '../assets/images/photo-alpha/gsa-ouverture.jpg';
+import Confetti from './Confetti';
 
 const Anniversary = () => {
     // Date de la célébration des 40 ans
@@ -24,17 +25,27 @@ const Anniversary = () => {
     };
 
     const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+    const [showConfetti, setShowConfetti] = useState(true);
 
     useEffect(() => {
         const timer = setInterval(() => {
             setTimeLeft(calculateTimeLeft());
         }, 1000);
 
-        return () => clearInterval(timer);
+        // Disable confetti after 10 seconds to save performance
+        const confettiTimer = setTimeout(() => {
+            setShowConfetti(false);
+        }, 10000);
+
+        return () => {
+            clearInterval(timer);
+            clearTimeout(confettiTimer);
+        };
     }, []);
 
     return (
-        <section className="anniversary-section">
+        <section className="anniversary-section" aria-label="Célébration des 40 ans du Groupe Scout Alpha">
+            <Confetti active={showConfetti} />
             <div className="anniversary-overlay"></div>
             <div className="anniversary-container">
                 <div className="anniversary-content">

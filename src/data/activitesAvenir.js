@@ -49,22 +49,5 @@ export const activitesAvenir = [
         },
         image: "https://placehold.co/800x400/e0e0e0/333333?text=Camp+de+Paques",
         isUpcoming: true
-    },
-    {
-        id: 4,
-        title: "Formation Chefs",
-        month: "MAI",
-        day: "05",
-        time: "14:00",
-        location: "QG Scout Alpha",
-        description: "Formation continue",
-        fullDescription: "Session de formation pour les chefs et assistants d'unité. Thèmes abordés : sécurité, pédagogie scoute et gestion de groupe. Présence obligatoire pour les chefs d'unité.",
-        details: {
-            organizer: "Direction du Groupe",
-            category: "Formation",
-            participants: "Chefs & Assistants"
-        },
-        image: "https://placehold.co/800x400/e0e0e0/333333?text=Formation+Chefs",
-        isUpcoming: true
     }
 ];

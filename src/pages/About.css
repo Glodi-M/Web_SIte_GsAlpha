@@ -189,8 +189,8 @@ section {
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     color: var(--primary-blue, #002b5b);
-    font-size: 2.5rem;
-    margin-bottom: 80px;
+    font-size: 2.2rem;
+    margin-bottom: 40px;
     text-align: center;
     position: relative;
 }
@@ -213,14 +213,14 @@ section {
 .location-section {
     display: flex;
     align-items: center;
-    gap: 100px;
-    margin-top: 80px;
+    gap: 80px;
+    margin-top: 60px;
 }
 
 /* --- Projet Éducatif Section --- */
 .project-educatif-section {
-    margin-top: 80px;
-    padding: 60px 0;
+    margin-top: 60px;
+    padding: 40px 0;
 }
 
 .project-educatif-section .project-content {

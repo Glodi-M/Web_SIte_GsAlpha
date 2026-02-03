@@ -67,28 +67,5 @@ export const activitesPasse = [
             "https://placehold.co/600x400/e0e0e0/333333?text=Rentree+4"
         ],
         isUpcoming: false
-    },
-    {
-        id: 8,
-        title: "Rentrée Scoute 2025",
-        month: "SEPT",
-        day: "15",
-        time: "08:00",
-        location: "Paroisse Ste Anne",
-        description: "Lancement de l'année",
-        fullDescription: "La grande rentrée pour l'année scoute 2025-2026 ! Accueil des nouveaux, montées de branches et grand rassemblement. Le début d'une aventure prometteuse.",
-        details: {
-            organizer: "Direction du Groupe",
-            category: "Rassemblement",
-            participants: "Tous les membres + Parents"
-        },
-        image: "https://placehold.co/800x400/e0e0e0/333333?text=Rentree+2025",
-        gallery: [
-            "https://placehold.co/600x400/e0e0e0/333333?text=Rentree+1",
-            "https://placehold.co/600x400/e0e0e0/333333?text=Rentree+2",
-            "https://placehold.co/600x400/e0e0e0/333333?text=Rentree+3",
-            "https://placehold.co/600x400/e0e0e0/333333?text=Rentree+4"
-        ],
-        isUpcoming: false
     }
 ];
