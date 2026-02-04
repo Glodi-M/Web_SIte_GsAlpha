@@ -704,6 +704,42 @@ footer {
   margin-top: 10px;
 }
 
+.developer-credit {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 0.75rem;
+  margin-top: 15px;
+}
+
+.developer-credit .heart {
+  color: #ff4757;
+  display: inline-block;
+  animation: heartbeat 1.5s ease infinite;
+}
+
+@keyframes heartbeat {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+.developer-credit a {
+  color: var(--accent-yellow);
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.developer-credit a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   nav ul {

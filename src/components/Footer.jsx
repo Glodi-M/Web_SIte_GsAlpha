@@ -44,6 +44,17 @@ const Footer = () => {
                 <p className="copyright">
                     © {currentYear} Groupe Scout Alpha | Tous droits réservés
                 </p>
+                <p className="developer-credit">
+                    By <span className="heart"></span> {' '}
+                    <a
+                        href="https://github.com/Glodi-M"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Glodi Mietete
+                    </a>
+                    | version build
+                </p>
             </div>
         </footer>
     );
