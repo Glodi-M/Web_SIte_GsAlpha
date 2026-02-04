@@ -6,7 +6,10 @@ const Hero = () => {
         <section className="hero" style={{ backgroundImage: `url(${banner})` }}>
             <div className="hero-overlay"></div>
             <div className="hero-content fadeInUp">
-                <h1>Travail, Disciplines, pour mieux Servir.</h1>
+                <h1>
+                    <span className="hero-values">Travail, Discipline, Persévérance</span>
+                    <span className="hero-motto">pour mieux Servir.</span>
+                </h1>
                 <p className="hero-subtitle">Bienvenue chez les Scouts du Groupe Alpha</p>
                 <div className="hero-buttons">
                     <a href="/Contact" className="btn-primary">Vivre l'aventure avec nous</a>
