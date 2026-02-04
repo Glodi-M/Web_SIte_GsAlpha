@@ -12,6 +12,7 @@ import ouragan from '../assets/images/logo-unites/ouragan.jpg';
 import paroisse from '../assets/images/logo-partenaires/paroisse-cec.png';
 import alphaeuro from '../assets/images/logo-unites/alphaeuro.jpeg';
 import cora from '../assets/images/logo-unites/cora.jpg';
+import bannerabout from '../assets/images/photo-alpha/bannerabout.jpg';
 
 const CountUp = ({ end, duration = 2000 }) => {
     const [count, setCount] = useState(0);
@@ -62,12 +63,8 @@ const About = () => {
         <main className="about-page">
             {/* Hero Section */}
             <section className="about-hero">
-                <div className="hero-background" style={{ backgroundImage: `url('https://placehold.co/1200x800/e0e0e0/333333?text=Groupe+Scout+Alpha')` }}></div>
+                <div className="hero-background" style={{ backgroundImage: `url(${bannerabout})` }}></div>
                 <div className="hero-overlay"></div>
-                <div className="hero-content fadeInUp">
-                    <h1>Groupe Scout Alpha</h1>
-                    <p>Toujours Prêts à Servir</p>
-                </div>
             </section>
 
             {/* Notre Histoire */}
