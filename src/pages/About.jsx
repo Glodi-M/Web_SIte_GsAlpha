@@ -9,7 +9,7 @@ import meute from '../assets/images/logo-unites/meute.jpg';
 import lion from '../assets/images/logo-unites/lion.jpg';
 import panthere from '../assets/images/logo-unites/panthere.jpg';
 import ouragan from '../assets/images/logo-unites/ouragan.jpg';
-import paroisse from '../assets/images/logo-partenaires/paroisse-cec.png';
+import paroisse from '../assets/images/logo-partenaires/paroisse-cec.jpg';
 import alphaeuro from '../assets/images/logo-unites/alphaeuro.jpeg';
 import cora from '../assets/images/logo-unites/cora.jpg';
 import bannerabout from '../assets/images/photo-alpha/bannerabout.jpg';

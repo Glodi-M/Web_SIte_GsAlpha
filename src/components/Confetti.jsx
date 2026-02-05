@@ -5,7 +5,10 @@ const Confetti = ({ active = true }) => {
     const [confettiPieces, setConfettiPieces] = useState([]);
 
     useEffect(() => {
-        if (!active) return;
+        if (!active) {
+            setConfettiPieces([]);
+            return;
+        }
 
         const colors = ['#ffd700', '#002b5b', '#ff6b6b', '#4ecdc4', '#45b7d1', '#96ceb4', '#fff'];
         const pieces = [];
@@ -25,7 +28,7 @@ const Confetti = ({ active = true }) => {
         setConfettiPieces(pieces);
     }, [active]);
 
-    if (!active) return null;
+    if (!active || confettiPieces.length === 0) return null;
 
     return (
         <div className="confetti-container" aria-hidden="true">

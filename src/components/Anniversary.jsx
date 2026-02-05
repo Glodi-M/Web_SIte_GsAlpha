@@ -1,15 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import './Anniversary.css';
 import alphaOuverture from '../assets/images/photo-alpha/gsa-ouverture.jpg';
 import Confetti from './Confetti';
 
-const Anniversary = () => {
-    // Date de la célébration des 40 ans
-    const celebrationDate = new Date('2026-06-15T10:00:00');
+// Date de la célébration des 40 ans (en dehors du composant)
+const CELEBRATION_DATE = new Date('2026-06-15T10:00:00');
 
-    const calculateTimeLeft = () => {
+const Anniversary = () => {
+    const calculateTimeLeft = useCallback(() => {
         const now = new Date();
-        const difference = celebrationDate - now;
+        const difference = CELEBRATION_DATE - now;
 
         if (difference <= 0) {
             return { days: 0, hours: 0, minutes: 0, seconds: 0, expired: true };
@@ -22,7 +22,7 @@ const Anniversary = () => {
             seconds: Math.floor((difference / 1000) % 60),
             expired: false
         };
-    };
+    }, []);
 
     const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
     const [showConfetti, setShowConfetti] = useState(true);
@@ -41,7 +41,7 @@ const Anniversary = () => {
             clearInterval(timer);
             clearTimeout(confettiTimer);
         };
-    }, []);
+    }, [calculateTimeLeft]);
 
     return (
         <section className="anniversary-section" aria-label="Célébration des 40 ans du Groupe Scout Alpha">
