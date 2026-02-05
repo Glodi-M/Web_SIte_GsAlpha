@@ -1,5 +1,5 @@
 import gsaforma from '../assets/images/photo-activities/gsaforma.jpg';
-import gsaservi from '../assets/images/photo-activities/gsaservi.jpg';
+import gsaservi from '../assets/images/photo-activities/gsaservi.JPG';
 import gsajeu from '../assets/images/photo-activities/gsajeu.jpg';
 import gsacamp from '../assets/images/photo-activities/gsacamp.jpg';
 
