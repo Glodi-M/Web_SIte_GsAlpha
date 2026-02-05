@@ -281,8 +281,59 @@ section {
 }
 
 @media (max-width: 768px) {
+    .project-educatif-section {
+        margin-top: 20px;
+        padding: 30px 15px;
+    }
+
+    .project-educatif-section .section-title {
+        font-size: 1.6rem;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
     .project-educatif-section .project-content {
         flex-direction: column;
+        gap: 30px;
+        margin-top: 20px;
+    }
+
+    .project-educatif-section .project-text {
+        order: 1;
+    }
+
+    .project-educatif-section .project-text p {
+        font-size: 1rem;
+        line-height: 1.7;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .project-educatif-section .project-list {
+        background: linear-gradient(135deg, #f8f9fa 0%, #fff 100%);
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    .project-educatif-section .project-list li {
+        font-size: 0.95rem;
+        padding: 10px 0;
+        gap: 10px;
+    }
+
+    .project-educatif-section .project-list li i {
+        font-size: 1rem;
+        min-width: 20px;
+    }
+
+    .project-educatif-section .project-image {
+        order: 2;
+    }
+
+    .project-educatif-section .project-image img {
+        border-radius: 15px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     }
 }
 
@@ -728,10 +779,6 @@ section {
     transition: transform 0.3s ease;
 }
 
-.unit-top {
-    margin-top: 80px;
-}
-
 .unit-item:hover .unit-logo {
     transform: scale(1.05);
 }
@@ -1003,10 +1050,55 @@ section {
     .section-title-left {
         font-size: 1.6rem;
         text-align: center;
+        display: block;
+        width: 100%;
+    }
+
+    .section-title-left::after {
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .section-title-center {
         font-size: 1.5rem;
+    }
+
+    /* History, Mission, Location sections mobile */
+    .history-section,
+    .mission-section,
+    .location-section {
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 30px;
+        padding: 20px 15px;
+    }
+
+    .text-content {
+        order: 1;
+    }
+
+    .text-content p {
+        font-size: 1rem;
+        line-height: 1.7;
+        padding-left: 15px;
+        text-align: left;
+    }
+
+    .text-content p:first-of-type::first-letter {
+        font-size: 2.2rem;
+    }
+
+    .image-content {
+        order: 2;
+        width: 100%;
+    }
+
+    .image-content img {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 12px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        border-width: 3px;
     }
 
     /* Affiliation cards mobile */

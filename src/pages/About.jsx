@@ -12,6 +12,7 @@ import ouragan from '../assets/images/logo-unites/ouragan.jpg';
 import paroisse from '../assets/images/logo-partenaires/paroisse-cec.jpg';
 import alphaeuro from '../assets/images/logo-unites/alphaeuro.jpeg';
 import cora from '../assets/images/logo-unites/cora.jpg';
+import clan from '../assets/images/logo-unites/clan.jpg';
 import bannerabout from '../assets/images/photo-alpha/bannerabout.jpg';
 
 const CountUp = ({ end, duration = 2000 }) => {
@@ -310,7 +311,7 @@ const About = () => {
                         <span>Compagnie ouragan</span>
                     </div>
                     <div className="unit-item delay-5">
-                        <img src="https://placehold.co/150x150/002b5b/ffffff?text=Clan" alt="Clan" className="unit-logo" />
+                        <img src={clan} alt="Clan lumière ardente" className="unit-logo" />
                         <span>Clan lumière ardente</span>
                     </div>
                 </div>

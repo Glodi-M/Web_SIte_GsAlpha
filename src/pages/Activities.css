@@ -254,8 +254,38 @@
         padding: 40px 20px;
     }
 
+    .quote-image {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 10px;
+    }
+
     .quote-author {
         margin: 0 auto;
+    }
+
+    .partners-logos {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .partner-logo {
+        width: 60px;
+        height: 60px;
+        padding: 8px;
+    }
+
+    .benefit-item {
+        padding: 12px 18px;
+    }
+
+    .benefit-icon {
+        font-size: 1.2rem;
+    }
+
+    .benefit-text {
+        font-size: 0.9rem;
     }
 }
 

@@ -161,14 +161,53 @@
         padding: 40px 20px;
         margin-top: 0;
         border-radius: 0;
+        gap: 40px;
     }
 
     .activity-hero {
-        height: 50vh;
+        height: 45vh;
+        min-height: 300px;
     }
 
     .activity-title {
-        font-size: 2rem;
+        font-size: 1.8rem;
+    }
+
+    .activity-meta-hero {
+        flex-wrap: wrap;
+        gap: 10px;
+        font-size: 0.95rem;
+    }
+
+    .meta-item {
+        padding: 4px 12px;
+        font-size: 0.85rem;
+    }
+
+    .back-link {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+
+    .content-left h2 {
+        font-size: 1.5rem;
+    }
+
+    .content-left p {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+    .content-right {
+        padding: 20px;
+    }
+
+    .details-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .value {
+        font-size: 1rem;
     }
 }
 

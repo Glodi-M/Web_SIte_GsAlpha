@@ -865,11 +865,32 @@ footer {
     justify-content: center;
   }
 
+  /* Project section mobile */
   .project-content {
     flex-direction: column;
     text-align: center;
+    gap: 25px;
+    margin-top: 10px;
   }
 
+  .project-image {
+    min-width: 100%;
+    order: 2;
+  }
+
+  .project-image img {
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+
+  .project-text {
+    min-width: 100%;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    order: 1;
+  }
+
+  /* Founder section mobile */
   .founder-content {
     flex-direction: column;
     text-align: center;
@@ -877,13 +898,53 @@ footer {
   }
 
   .founder-image img {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
+    border-width: 4px;
+  }
+
+  .founder-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .founder-quote {
+    padding: 20px;
+    border-radius: 0 15px 15px 15px;
+  }
+
+  .founder-quote p {
+    font-size: 1rem;
+  }
+
+  /* Main group photo mobile */
+  .main-group-photo img {
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   }
 
   .grid-gallery {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
+  }
+
+  .grid-item {
+    border-radius: 10px;
+  }
+
+  /* News and activity cards mobile */
+  .news-card-image,
+  .activity-image {
+    height: 180px;
+  }
+
+  .news-card-content,
+  .activity-info {
+    padding: 18px;
+  }
+
+  .news-card-title,
+  .activity-info h3 {
+    font-size: 1.1rem;
   }
 
   .activities-list {
